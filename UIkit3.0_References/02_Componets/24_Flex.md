@@ -21,6 +21,15 @@ MARKUP
 Item 1
 Item 2
 Item 3
+
+
+<div class="uk-flex">
+    <div class="uk-card uk-card-default uk-card-body">Item 1</div>
+    <div class="uk-card uk-card-default uk-card-body uk-margin-left">Item 2</div>
+    <div class="uk-card uk-card-default uk-card-body uk-margin-left">Item 3</div>
+</div>
+
+
 Horizontal alignment
 These classes define the horizontal alignment of flex items and distribute the space between them. Add one or more of them to the flex container in order to configure the alignments of the flex items. By default, flex items are aligned to the left as does the .uk-flex-left class.
 
@@ -38,6 +47,16 @@ MARKUP
 Item 1
 Item 2
 Item 3
+
+
+<div class="uk-flex uk-flex-center">
+    <div class="uk-card uk-card-default uk-card-body">Item 1</div>
+    <div class="uk-card uk-card-default uk-card-body uk-margin-left">Item 2</div>
+    <div class="uk-card uk-card-default uk-card-body uk-margin-left">Item 3</div>
+</div>
+
+
+
 Responsive
 UIkit provides a number of responsive flex classes for horizontal alignment. Basically, they work just like the usual flex alignment classes, except that they have suffixes that represent the breakpoint from which they come to effect.
 
@@ -70,6 +89,14 @@ MARKUP
 Item 1
 Item 2
 Item 3
+
+<div class="uk-flex uk-flex-center@m uk-flex-right@l">
+    <div class="uk-card uk-card-default uk-card-body">Item 1</div>
+    <div class="uk-card uk-card-default uk-card-body uk-margin-left">Item 2</div>
+    <div class="uk-card uk-card-default uk-card-body uk-margin-left">Item 3</div>
+</div>
+
+
 Vertical alignment
 These classes define the vertical alignment of flex items. By default, flex items fill the height of their container as does the .uk-flex-stretch class.
 
@@ -87,6 +114,16 @@ Item 2
 Item 3
 ...
 ...
+
+
+<div class="uk-flex uk-flex-middle uk-text-center">
+  <div class="uk-card uk-card-default uk-card-body">Item 1</div>
+   <div class="uk-card uk-card-default uk-card-body uk-margin-left">Item 2<br>...</div>
+   <div class="uk-card uk-card-default uk-card-body uk-margin-left">Item 3<br>...<br>...</div>
+</div>
+
+
+
 Direction modifiers
 These classes define the axis that flex items are placed on and their direction. By default, items run horizontally from left to right as does the .uk-flex-row class.
 
