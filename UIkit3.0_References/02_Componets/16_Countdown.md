@@ -1,0 +1,89 @@
+
+Countdown
+Create a simple countdown timer.
+
+Usage
+To apply this component, add the uk-countdown attribute to a container element and define a date when the countdown should expire. Just add date: YYYY-MM-DDThh:mm:ssTZD option to the attribute, using the ISO 8601 format, e.g. 2017-12-04T22:00:00+00:00 (UTC time).
+
+Add the following classes to child elements to apply the necessary functionality and styling.
+
+CLASS	DESCRIPTION
+.uk-countdown-days	Add this class to indicate the days to be counted down.
+.uk-countdown-hours	Add this class to indicate the hours to be counted down.
+.uk-countdown-minutes	Add this class to indicate the minutes to be counted down.
+.uk-countdown-seconds	Add this class to indicate the seconds to be counted down.
+.uk-countdown-number	This class adds the neccessary style to a countdown number.
+<div uk-countdown="date: 2018-10-24T02:18:46+00:00">
+    <span class="uk-countdown-number uk-countdown-days"></span>
+    <span class="uk-countdown-number uk-countdown-hours"></span>
+    <span class="uk-countdown-number uk-countdown-minutes"></span>
+    <span class="uk-countdown-number uk-countdown-seconds"></span>
+</div>
+PREVIEW
+MARKUP
+06
+23
+59
+29
+Separator
+To insert a separator between each number, use the .uk-countdown-separator class.
+
+<div uk-countdown="date: 2018-10-24T02:18:46+00:00">
+    <span class="uk-countdown-number uk-countdown-days"></span>
+    <span class="uk-countdown-separator">:</span>
+    <span class="uk-countdown-number uk-countdown-hours"></span>
+    <span class="uk-countdown-separator">:</span>
+    <span class="uk-countdown-number uk-countdown-minutes"></span>
+    <span class="uk-countdown-separator">:</span>
+    <span class="uk-countdown-number uk-countdown-seconds"></span>
+</div>
+PREVIEW
+MARKUP
+06
+:
+23
+:
+59
+:
+29
+Label
+To add a label to each number, use the .uk-countdown-label class.
+
+<div class="uk-countdown-label">Days</div>
+<div class="uk-countdown-label">Hours</div>
+<div class="uk-countdown-label">Minutes</div>
+<div class="uk-countdown-label">Seconds</div>
+PREVIEW
+MARKUP
+06
+Days
+:
+23
+Hours
+:
+59
+Minutes
+:
+29
+Seconds
+Component options
+Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. For more information, take a look at the chapter on component configuration.
+
+OPTION	VALUE	DEFAULT	DESCRIPTION
+date	String	false	Any string parsable by Date.parse. See Reference.
+JavaScript
+Learn more about JavaScript components.
+
+Initialization
+UIkit.countdown(element, options);
+Methods
+The following methods are available for the component:
+
+Start
+UIkit.countdown(element).start();
+Starts the countdown.
+
+Stop
+UIkit.countdown(element).stop();
+Stops the countdown.
+
