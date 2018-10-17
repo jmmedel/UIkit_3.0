@@ -138,6 +138,14 @@ MARKUP
 Item 1
 Item 2
 Item 3
+
+<div class="uk-flex uk-flex-column uk-width-1-3">
+   <div class="uk-card uk-card-default uk-card-body">Item 1</div>
+   <div class="uk-card uk-card-default uk-card-body uk-margin-top">Item 2</div>
+   <div class="uk-card uk-card-default uk-card-body uk-margin-top">Item 3</div>
+</div>
+
+
 Wrap modifiers
 By default, flex items are fit into one line and run from left to right. Add one of these classes to modify the behavior of wrapping flex items.
 
@@ -163,6 +171,18 @@ Item 3
 Item 4
 Item 5
 Item 6
+
+
+<div class="uk-flex uk-flex-wrap uk-flex-wrap-around uk-background-muted uk-height-medium">
+    <div class="uk-width-1-3 uk-card uk-card-default uk-card-body uk-card-small">Item 1</div>
+    <div class="uk-width-1-2 uk-card uk-card-default uk-card-body uk-card-small uk-margin-left">Item 2</div>
+    <div class="uk-width-1-3 uk-card uk-card-default uk-card-body uk-card-small">Item 3</div>
+    <div class="uk-width-1-3 uk-card uk-card-default uk-card-body uk-card-small uk-margin-left">Item 4</div>
+    <div class="uk-width-1-2 uk-card uk-card-default uk-card-body uk-card-small">Item 5</div>
+    <div class="uk-width-1-3 uk-card uk-card-default uk-card-body uk-card-small uk-margin-left">Item 6</div>
+</div>
+
+
 Item order
 By default, flex items are laid out according to the source order. To display a certain item as the first or last one, just add one of these classes.
 
@@ -186,6 +206,15 @@ MARKUP
 Item 1
 Item 2
 Item 3
+
+<div class="uk-flex">
+   <div class="uk-card uk-card-default uk-card-body uk-flex-last uk-margin-left">Item 1</div>
+   <div class="uk-card uk-card-default uk-card-body uk-flex-first">Item 2</div>
+   <div class="uk-card uk-card-default uk-card-body uk-margin-left">Item 3</div>
+</div>
+
+
+
 Item dimensions
 To determine how much space a flex item should take up, add one of the following classes to the item. By default, items determine their size by their content, but are allowed to shrink.
 
@@ -201,6 +230,17 @@ MARKUP
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
 
 Image
+
+
+<div class="uk-flex-middle" uk-grid>
+    <div class="uk-width-2-3@m">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+    </div>
+    <div class="uk-width-1-3@m uk-flex-first">
+        <img src="images/light.jpg" alt="Image">
+    </div>
+</div>
+
 
 
 
