@@ -25,8 +25,31 @@ MARKUP
 23
 59
 29
+
+
+<div class="uk-grid-small uk-child-width-auto uk-margin" uk-grid uk-countdown="date: 2018-10-24T02:18:46+00:00">
+    <div>
+        <div class="uk-countdown-number uk-countdown-days"></div>
+    </div>
+    <div>
+        <div class="uk-countdown-number uk-countdown-hours"></div>
+    </div>
+    <div>
+        <div class="uk-countdown-number uk-countdown-minutes"></div>
+    </div>
+    <div>
+        <div class="uk-countdown-number uk-countdown-seconds"></div>
+    </div>
+</div>
+
+
 Separator
 To insert a separator between each number, use the .uk-countdown-separator class.
+
+
+
+
+
 
 <div uk-countdown="date: 2018-10-24T02:18:46+00:00">
     <span class="uk-countdown-number uk-countdown-days"></span>
@@ -46,6 +69,28 @@ MARKUP
 59
 :
 29
+
+
+<div class="uk-grid-small uk-child-width-auto uk-margin" uk-grid uk-countdown="date: 2018-10-24T02:18:46+00:00">
+    <div>
+        <div class="uk-countdown-number uk-countdown-days"></div>
+    </div>
+    <div class="uk-countdown-separator">:</div>
+    <div>
+        <div class="uk-countdown-number uk-countdown-hours"></div>
+    </div>
+    <div class="uk-countdown-separator">:</div>
+    <div>
+        <div class="uk-countdown-number uk-countdown-minutes"></div>
+    </div>
+    <div class="uk-countdown-separator">:</div>
+    <div>
+        <div class="uk-countdown-number uk-countdown-seconds"></div>
+    </div>
+</div>
+
+
+
 Label
 To add a label to each number, use the .uk-countdown-label class.
 
@@ -53,6 +98,7 @@ To add a label to each number, use the .uk-countdown-label class.
 <div class="uk-countdown-label">Hours</div>
 <div class="uk-countdown-label">Minutes</div>
 <div class="uk-countdown-label">Seconds</div>
+
 PREVIEW
 MARKUP
 06
@@ -66,6 +112,30 @@ Minutes
 :
 29
 Seconds
+
+<div class="uk-grid-small uk-child-width-auto" uk-grid uk-countdown="date: 2018-10-24T02:18:46+00:00">
+    <div>
+        <div class="uk-countdown-number uk-countdown-days"></div>
+        <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Days</div>
+    </div>
+    <div class="uk-countdown-separator">:</div>
+    <div>
+        <div class="uk-countdown-number uk-countdown-hours"></div>
+        <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Hours</div>
+    </div>
+    <div class="uk-countdown-separator">:</div>
+    <div>
+        <div class="uk-countdown-number uk-countdown-minutes"></div>
+        <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Minutes</div>
+    </div>
+    <div class="uk-countdown-separator">:</div>
+    <div>
+        <div class="uk-countdown-number uk-countdown-seconds"></div>
+        <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Seconds</div>
+    </div>
+</div>
+
+
 Component options
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. For more information, take a look at the chapter on component configuration.
 
