@@ -55,6 +55,19 @@ form-danger
 form-success
  
 disabled
+
+<div class="uk-margin">
+    <input class="uk-input uk-form-danger uk-form-width-medium" type="text" placeholder="form-danger" value="form-danger">
+</div>
+
+<div class="uk-margin">
+    <input class="uk-input uk-form-success uk-form-width-medium" type="text" placeholder="form-success" value="form-success">
+</div>
+
+<div class="uk-margin">
+    <input class="uk-input uk-form-width-medium" type="text" placeholder="disabled" value="disabled" disabled>
+</div>
+
 Size modifiers
 Add one of the classes to an <input>, <select> or <textarea> element to modify its size.
 
@@ -69,6 +82,25 @@ Large
 Default
  
 Small
+
+
+<form>
+
+    <div class="uk-margin">
+        <input class="uk-input uk-form-width-medium uk-form-large" type="text" placeholder="Large">
+    </div>
+
+    <div class="uk-margin">
+        <input class="uk-input uk-form-width-medium" type="text" placeholder="Default">
+    </div>
+
+    <div class="uk-margin">
+        <input class="uk-input uk-form-width-medium uk-form-small" type="text" placeholder="Small">
+    </div>
+
+</form>
+
+
 Width modifiers
 Add one of the following classes to an <input>, <select> or <textarea> element to adjust its width.
 
@@ -87,6 +119,28 @@ Medium
 Small
  
 XSmall
+
+
+<form>
+
+    <div class="uk-margin">
+        <input class="uk-input uk-form-width-large" type="text" placeholder="Large">
+    </div>
+
+    <div class="uk-margin">
+        <input class="uk-input uk-form-width-medium" type="text" placeholder="Medium">
+    </div>
+
+    <div class="uk-margin">
+        <input class="uk-input uk-form-width-small" type="text" placeholder="Small">
+    </div>
+
+    <div class="uk-margin">
+        <input class="uk-input uk-form-width-xsmall" type="text" placeholder="XSmall">
+    </div>
+
+</form>
+
 You can also apply the .uk-width-* classes from the Width component to form controls.
 
 PREVIEW
@@ -100,6 +154,11 @@ PREVIEW
 MARKUP
 
 Form blank
+
+<form>
+    <input class="uk-input uk-form-blank uk-form-width-medium" type="text" placeholder="Form blank">
+</form>
+
 Layout
 Define labels and controls and apply a stacked or horizontal layout to form elements. Layout modifiers can be added to any parent element like the <fieldset> element. This makes it possible to have different form layouts for each fieldset.
 
@@ -128,6 +187,39 @@ Select
 Radio
  Option 01
  Option 02
+
+
+
+<form class="uk-form-stacked">
+
+    <div class="uk-margin">
+        <label class="uk-form-label" for="form-stacked-text">Text</label>
+        <div class="uk-form-controls">
+            <input class="uk-input" id="form-stacked-text" type="text" placeholder="Some text...">
+        </div>
+    </div>
+
+    <div class="uk-margin">
+        <label class="uk-form-label" for="form-stacked-select">Select</label>
+        <div class="uk-form-controls">
+            <select class="uk-select" id="form-stacked-select">
+                <option>Option 01</option>
+                <option>Option 02</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="uk-margin">
+        <div class="uk-form-label">Radio</div>
+        <div class="uk-form-controls">
+            <label><input class="uk-radio" type="radio" name="radio1"> Option 01</label><br>
+            <label><input class="uk-radio" type="radio" name="radio1"> Option 02</label>
+        </div>
+    </div>
+
+</form>
+
+
 Horizontal form
 Use the .uk-form-controls-text class to better align checkboxes and radio buttons when using them with text in a horizontal layout.
 
