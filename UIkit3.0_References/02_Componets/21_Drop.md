@@ -20,6 +20,24 @@ NOTE The Drop component has no default styling. In this example, we've used a ca
 PREVIEW
 MARKUP
 HOVER   CLICK
+
+<div class="uk-inline">
+    <button class="uk-button uk-button-default" type="button">Hover</button>
+    <div uk-drop>
+        <div class="uk-card uk-card-body uk-card-default">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+    </div>
+</div>
+
+<div class="uk-inline">
+    <button class="uk-button uk-button-default" type="button">Click</button>
+    <div uk-drop="mode: click">
+        <div class="uk-card uk-card-body uk-card-default">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+    </div>
+</div>
+
+
+
+
 Grid in drop
 You can place a grid from the Grid component inside a drop. Just wrap the content with a <div> element and add the uk-grid attribute. If the grid should stack automatically, whenever the drop no longer fits its container, just add the .uk-drop-grid class.
 
@@ -33,6 +51,24 @@ MARKUP
 HOVER
 Position
 Add one of the following options to the uk-drop attribute to adjust the drop's alignment.
+
+
+
+<button class="uk-button uk-button-default" type="button">Hover</button>
+<div class="uk-width-large" uk-drop>
+    <div class="uk-card uk-card-body uk-card-default">
+        <div class="uk-drop-grid uk-child-width-1-2@m" uk-grid>
+            <div>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+            </div>
+            <div>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+            </div>
+        </div>
+    </div>
+</div>
+
+
 
 <div uk-drop="pos: top-left"></div>
 PREVIEW
@@ -56,6 +92,33 @@ right-bottom	Aligns the drop to the right bottom.
 Boundary
 By default, the drop flips automatically when it exceeds the viewport's edge. If you want to flip it according to a container's boundary, just add the boundary: .my-class option to the uk-drop attribute, using a selector for the container. That way you can determine any parent element as the drop's boundary.
 
+
+
+
+<div class="uk-inline">
+    <button class="uk-button uk-button-default" type="button">Top Right</button>
+    <div uk-drop="pos: top-right">
+        <div class="uk-card uk-card-body uk-card-default">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+    </div>
+</div>
+
+<div class="uk-inline">
+    <button class="uk-button uk-button-default" type="button">Bottom Justify</button>
+    <div uk-drop="pos: bottom-justify">
+        <div class="uk-card uk-card-body uk-card-default">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+    </div>
+</div>
+
+<div class="uk-inline">
+    <button class="uk-button uk-button-default" type="button">Right Center</button>
+    <div uk-drop="pos: right-center">
+        <div class="uk-card uk-card-body uk-card-default">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+    </div>
+</div>
+
+
+
+
 <div class="my-class">
     <button type="button"></button>
     <div uk-drop="boundary: .my-class"></div>
@@ -63,18 +126,55 @@ By default, the drop flips automatically when it exceeds the viewport's edge. If
 PREVIEW
 MARKUP
 HOVERHOVER
+
 Boundary alignment
 You can also align the drop to its boundary. To do so, add the boundary-align: true option to the attribute.
+
+
+<div class="boundary uk-panel uk-placeholder uk-width-2-3@s">
+
+    <button class="uk-button uk-button-default uk-float-left" type="button">Hover</button>
+    <div uk-drop="boundary: .boundary">
+        <div class="uk-card uk-card-body uk-card-default">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+    </div>
+
+    <button class="uk-button uk-button-default uk-float-right" type="button">Hover</button>
+    <div uk-drop="boundary: .boundary">
+        <div class="uk-card uk-card-body uk-card-default">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+    </div>
+
+</div>
+
 
 <div class="my-class">
     <button type="button"></button>
     <div uk-drop="boundary: .my-class; boundary-align: true"></div>
 </div>
+
+
 PREVIEW
 MARKUP
 JUSTIFYCENTER
 Offset
 To define a custom offset between the drop container and the toggle, add the offset option with a value for the offset, measured in pixels.
+
+
+
+<div class="boundary-align uk-panel uk-placeholder">
+
+    <button class="uk-button uk-button-default uk-float-left" type="button">Justify</button>
+    <div uk-drop="pos: bottom-justify; boundary: .boundary-align; boundary-align: true">
+        <div class="uk-card uk-card-body uk-card-default">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+    </div>
+
+    <button class="uk-button uk-button-default uk-float-right" type="button">Center</button>
+    <div uk-drop="pos: bottom-center; boundary: .boundary-align; boundary-align: true">
+        <div class="uk-card uk-card-body uk-card-default">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+    </div>
+
+</div>
+
+
 
 <div uk-drop="offset: 80"></div>
 PREVIEW
@@ -82,6 +182,13 @@ MARKUP
 HOVER
 Animation
 Apply one or more animations to the dropdown by adding the animation: uk-animation-* option with one of the classes from the Animation component. You can also determine the animation's duration. Just add the duration option with your value.
+
+
+<button class="uk-button uk-button-default" type="button">Hover</button>
+<div uk-drop="animation: uk-animation-slide-top-small; duration: 1000">
+    <div class="uk-card uk-card-body uk-card-default">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+</div>
+
 
 <div uk-drop="animation: uk-animation-slide-top-small; duration: 1000"></div>
 PREVIEW
