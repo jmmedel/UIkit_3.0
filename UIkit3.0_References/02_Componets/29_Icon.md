@@ -20,6 +20,10 @@ If icon is the only option in the attribute value, you can also use uk-icon="NAM
 PREVIEW
 MARKUP
  
+ <span class="uk-margin-small-right" uk-icon="check"></span>
+
+<a href="" uk-icon="heart"></a>
+
 Library
 Here is an overview of all currently available icons. Over time, we will keep adding new icons to the list.
 
@@ -169,13 +173,31 @@ Add the ratio: 2 parameter to the uk-icon attribute to double its size – or an
 PREVIEW
 MARKUP
  
+
+
+<span class="uk-margin-small-right" uk-icon="icon: check; ratio: 2"></span>
+<span uk-icon="icon: check; ratio: 3.5"></span>
+
+
 Link modifier
 To reset the default link styling to a more muted color when using an icon inside an anchor, add the .uk-icon-link class.
 
 <a href="" class="uk-icon-link" uk-icon="heart"></a>
+
+
+<a href="#" class="uk-icon-link uk-margin-small-right" uk-icon="copy"></a>
+<a href="#" class="uk-icon-link uk-margin-small-right" uk-icon="file-edit"></a>
+<a href="#" class="uk-icon-link" uk-icon="trash"></a>
+
+
 PREVIEW
 MARKUP
   
+<a href="" class="uk-icon-button uk-margin-small-right" uk-icon="twitter"></a>
+<a href="" class="uk-icon-button  uk-margin-small-right" uk-icon="facebook"></a>
+<a href="" class="uk-icon-button" uk-icon="google-plus"></a>
+
+
 Button modifier
 Use the modifier .uk-icon-button class on an <a> element to create an icon button, which can be used for social icons.
 
@@ -183,6 +205,8 @@ Use the modifier .uk-icon-button class on an <a> element to create an icon butto
 PREVIEW
 MARKUP
   
+<span class="uk-icon uk-icon-image" style="background-image: url(images/dark.jpg);"></span>
+
 Image modifier
 You can also make any background image scale to the size of an icon. Just add the .uk-icon-image class and a background image path.
 
