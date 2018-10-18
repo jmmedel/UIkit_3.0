@@ -11,6 +11,11 @@ To create a label, just add the .uk-label class to a <span> element.
 PREVIEW
 MARKUP
 DEFAULT
+
+
+<span class="uk-label">Default</span>
+
+
 Style modifiers
 Add one of the following classes for additional styles.
 
@@ -22,4 +27,15 @@ CLASS	DESCRIPTION
 PREVIEW
 MARKUP
 DEFAULT SUCCESS WARNING DANGER
+
+
+
+<span class="uk-label">Default</span>
+
+<span class="uk-label uk-label-success">Success</span>
+
+<span class="uk-label uk-label-warning">Warning</span>
+
+<span class="uk-label uk-label-danger">Danger</span>
+
 
