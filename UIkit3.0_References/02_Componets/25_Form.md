@@ -39,6 +39,48 @@ Textarea
  A
  B
 
+
+
+<form>
+    <fieldset class="uk-fieldset">
+
+        <legend class="uk-legend">Legend</legend>
+
+        <div class="uk-margin">
+            <input class="uk-input" type="text" placeholder="Input">
+        </div>
+
+        <div class="uk-margin">
+            <select class="uk-select">
+                <option>Option 01</option>
+                <option>Option 02</option>
+            </select>
+        </div>
+
+        <div class="uk-margin">
+            <textarea class="uk-textarea" rows="5" placeholder="Textarea"></textarea>
+        </div>
+
+        <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
+            <label><input class="uk-radio" type="radio" name="radio2" checked> A</label>
+            <label><input class="uk-radio" type="radio" name="radio2"> B</label>
+        </div>
+
+        <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
+            <label><input class="uk-checkbox" type="checkbox" checked> A</label>
+            <label><input class="uk-checkbox" type="checkbox"> B</label>
+        </div>
+
+        <div class="uk-margin">
+            <input class="uk-range" type="range" value="2" min="0" max="10" step="0.1">
+        </div>
+
+    </fieldset>
+</form>
+
+
+
+
 States modifiers
 Provide the user with basic information through feedback states on form controls by using one of the following classes.
 
@@ -55,6 +97,21 @@ form-danger
 form-success
  
 disabled
+
+
+<div class="uk-margin">
+    <input class="uk-input uk-form-danger uk-form-width-medium" type="text" placeholder="form-danger" value="form-danger">
+</div>
+
+<div class="uk-margin">
+    <input class="uk-input uk-form-success uk-form-width-medium" type="text" placeholder="form-success" value="form-success">
+</div>
+
+<div class="uk-margin">
+    <input class="uk-input uk-form-width-medium" type="text" placeholder="disabled" value="disabled" disabled>
+</div>
+
+
 
 <div class="uk-margin">
     <input class="uk-input uk-form-danger uk-form-width-medium" type="text" placeholder="form-danger" value="form-danger">
@@ -243,6 +300,10 @@ Select
 Radio
  Option 01
  Option 02
+
+
+
+
 Form and icons
 You use an icon from the Icon component inside a form. Add the .uk-form-icon class to a <span> element. Group it with an <input> element by adding the .uk-inline class from the Utility component to a container element around both. The icon has to come first in the markup. By default, the icon will be placed on the left side of the form. To change the alignment, add the .uk-form-icon-flip class.
 
@@ -252,6 +313,25 @@ You use an icon from the Icon component inside a form. Add the .uk-form-icon cla
 </div>
 PREVIEW
 MARKUP
+
+
+<form>
+
+    <div class="uk-margin">
+        <div class="uk-inline">
+            <span class="uk-form-icon" uk-icon="icon: user"></span>
+            <input class="uk-input" type="text">
+        </div>
+    </div>
+
+    <div class="uk-margin">
+        <div class="uk-inline">
+            <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: lock"></span>
+            <input class="uk-input" type="text">
+        </div>
+    </div>
+
+</form>
 
  
 Clickable icons
@@ -265,6 +345,27 @@ PREVIEW
 MARKUP
 
  
+
+<form>
+
+    <div class="uk-margin">
+        <div class="uk-inline">
+            <a class="uk-form-icon" href="#" uk-icon="icon: pencil"></a>
+            <input class="uk-input" type="text">
+        </div>
+    </div>
+
+    <div class="uk-margin">
+        <div class="uk-inline">
+            <a class="uk-form-icon uk-form-icon-flip" href="#" uk-icon="icon: link"></a>
+            <input class="uk-input" type="text">
+        </div>
+    </div>
+
+</form>
+
+
+
 Form and grid
 You can also use the Grid and Width components to define the layout of a form.
 
@@ -282,6 +383,31 @@ MARKUP
 50
  
 50
+
+
+<form class="uk-grid-small" uk-grid>
+    <div class="uk-width-1-1">
+        <input class="uk-input" type="text" placeholder="100">
+    </div>
+    <div class="uk-width-1-2@s">
+        <input class="uk-input" type="text" placeholder="50">
+    </div>
+    <div class="uk-width-1-4@s">
+        <input class="uk-input" type="text" placeholder="25">
+    </div>
+    <div class="uk-width-1-4@s">
+        <input class="uk-input" type="text" placeholder="25">
+    </div>
+    <div class="uk-width-1-2@s">
+        <input class="uk-input" type="text" placeholder="50">
+    </div>
+    <div class="uk-width-1-2@s">
+        <input class="uk-input" type="text" placeholder="50">
+    </div>
+</form>
+
+
+
 Custom controls
 To replace a file inputs or select forms with your own HTML content, like a button or text, add the uk-form-custom attribute to a container element.
 
@@ -296,6 +422,38 @@ PREVIEW
 MARKUP
 SELECT
 Here is a text  upload
+
+
+
+<form>
+
+    <div class="uk-margin">
+        <div uk-form-custom>
+            <input type="file">
+            <button class="uk-button uk-button-default" type="button" tabindex="-1">Select</button>
+        </div>
+    </div>
+
+    <div class="uk-margin">
+        <span class="uk-text-middle">Here is a text</span>
+        <div uk-form-custom>
+            <input type="file">
+            <span class="uk-link">upload</span>
+        </div>
+    </div>
+
+    <div class="uk-margin" uk-margin>
+        <div uk-form-custom="target: true">
+            <input type="file">
+            <input class="uk-input uk-form-width-medium" type="text" placeholder="Select file" disabled>
+        </div>
+        <button class="uk-button uk-button-default">Submit</button>
+    </div>
+
+</form>
+
+
+
 
 Select file
   SUBMIT
@@ -316,6 +474,56 @@ Option 01
 PLEASE SELECT... 
 Component option
 You can add this option to the uk-form-custom attribute. Learn more
+
+
+
+<form>
+
+    <div class="uk-margin">
+        <div uk-form-custom="target: true">
+            <select>
+                <option value="1">Option 01</option>
+                <option value="2">Option 02</option>
+                <option value="3">Option 03</option>
+                <option value="4">Option 04</option>
+            </select>
+            <span></span>
+        </div>
+    </div>
+
+    <div class="uk-margin">
+        <div uk-form-custom="target: > * > span:last-child">
+            <select>
+                <option value="1">Option 01</option>
+                <option value="2">Option 02</option>
+                <option value="3">Option 03</option>
+                <option value="4">Option 04</option>
+            </select>
+            <span class="uk-link">
+                <span uk-icon="icon: pencil"></span>
+                <span></span>
+            </span>
+        </div>
+    </div>
+
+    <div class="uk-margin">
+        <div uk-form-custom="target: > * > span:first-child">
+            <select>
+                <option value="">Please select...</option>
+                <option value="1">Option 01</option>
+                <option value="2">Option 02</option>
+                <option value="3">Option 03</option>
+                <option value="4">Option 04</option>
+            </select>
+            <button class="uk-button uk-button-default" type="button" tabindex="-1">
+                <span></span>
+                <span uk-icon="icon: chevron-down"></span>
+            </button>
+        </div>
+    </div>
+
+</form>
+
 
 OPTION	VALUE	DEFAULT	DESCRIPTION
 target	CSS selector, Boolean	false	Value display target.
