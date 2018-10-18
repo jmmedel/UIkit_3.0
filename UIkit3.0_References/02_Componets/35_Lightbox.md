@@ -15,6 +15,13 @@ To apply this component, add the uk-lightbox attribute to a container to turn al
 PREVIEW
 MARKUP
 OPEN LIGHTBOX
+
+
+<div uk-lightbox>
+    <a class="uk-button uk-button-default" href="images/photo.jpg">Open Lightbox</a>
+</div>
+
+
 Alt Attribute
 To add an alt attribute to the image in the lightbox, set the data-alt attribute on an anchor.
 
@@ -24,6 +31,12 @@ To add an alt attribute to the image in the lightbox, set the data-alt attribute
 PREVIEW
 MARKUP
 OPEN LIGHTBOX
+
+<div uk-lightbox>
+    <a class="uk-button uk-button-default" href="images/photo.jpg" data-alt="Image">Open Lightbox</a>
+</div>
+
+
 Caption
 To display a caption at the bottom of the lightbox, set the data-caption attribute on an anchor.
 
@@ -33,6 +46,11 @@ To display a caption at the bottom of the lightbox, set the data-caption attribu
 PREVIEW
 MARKUP
 OPEN LIGHTBOX
+
+<div uk-lightbox>
+    <a class="uk-button uk-button-default" href="images/photo.jpg" data-caption="Caption">Open Lightbox</a>
+</div>
+
 Animations
 By default, the Lightbox gallery uses a slide animation. You can set the animation option to use a different one. Possible values are slide, fade and scale.
 
@@ -41,6 +59,8 @@ By default, the Lightbox gallery uses a slide animation. You can set the animati
 </div>
 PREVIEW
 MARKUP
+
+
 Slide
 
 
@@ -50,6 +70,65 @@ Fade
 
 
 Scale
+
+
+
+<div class="uk-h3">Slide</div>
+<div class="uk-child-width-1-3@m" uk-grid uk-lightbox="animation: slide">
+    <div>
+        <a class="uk-inline" href="images/photo.jpg" data-caption="Caption 1">
+            <img src="images/photo.jpg" alt="">
+        </a>
+    </div>
+    <div>
+        <a class="uk-inline" href="images/dark.jpg" data-caption="Caption 2">
+            <img src="images/dark.jpg" alt="">
+        </a>
+    </div>
+    <div>
+        <a class="uk-inline" href="images/light.jpg" data-caption="Caption 3">
+            <img src="images/light.jpg" alt="">
+        </a>
+    </div>
+</div>
+
+<div class="uk-h3">Fade</div>
+<div class="uk-child-width-1-3@m" uk-grid uk-lightbox="animation: fade">
+    <div>
+        <a class="uk-inline" href="images/photo.jpg" data-caption="Caption 1">
+            <img src="images/photo.jpg" alt="">
+        </a>
+    </div>
+    <div>
+        <a class="uk-inline" href="images/dark.jpg" data-caption="Caption 2">
+            <img src="images/dark.jpg" alt="">
+        </a>
+    </div>
+    <div>
+        <a class="uk-inline" href="images/light.jpg" data-caption="Caption 3">
+            <img src="images/light.jpg" alt="">
+        </a>
+    </div>
+</div>
+
+<div class="uk-h3">Scale</div>
+<div class="uk-child-width-1-3@m" uk-grid uk-lightbox="animation: scale">
+    <div>
+        <a class="uk-inline" href="images/photo.jpg" data-caption="Caption 1">
+            <img src="images/photo.jpg" alt="">
+        </a>
+    </div>
+    <div>
+        <a class="uk-inline" href="images/dark.jpg" data-caption="Caption 2">
+            <img src="images/dark.jpg" alt="">
+        </a>
+    </div>
+    <div>
+        <a class="uk-inline" href="images/light.jpg" data-caption="Caption 3">
+            <img src="images/light.jpg" alt="">
+        </a>
+    </div>
+</div>
 
 
 
@@ -76,6 +155,16 @@ OPTION	DESCRIPTION
 data-type="image"	The content type is an image.
 data-type="video"	The content type is a video.
 data-type="iframe"	The content type is a regular website.
+
+<div uk-lightbox>
+    <a class="uk-button" href="video.mp4" data-poster="image.jpg"></a>
+    <a class="uk-button" href="https://www.youtube.com/watch?v=YE7VzlLtp-4"></a>
+    <a class="uk-button" href="https://vimeo.com/1084537"></a>
+    <a class="uk-button" href="https://www.google.com/maps"></a>
+</div>
+
+
+
 Component options
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. Learn more
 
