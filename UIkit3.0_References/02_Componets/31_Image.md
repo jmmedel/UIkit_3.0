@@ -20,6 +20,12 @@ The width and height attributes are required so an empty placeholder can be gene
 PREVIEW
 MARKUP
 
+
+
+<img data-src="images/light.jpg" width="1800" height="1200" alt="" uk-img>
+
+
+
 Srcset
 To use the srcset attribute, just prefix it as data-srcset.
 
@@ -27,12 +33,26 @@ To use the srcset attribute, just prefix it as data-srcset.
 PREVIEW
 MARKUP
 
+
+
+<img data-src="https://images.unsplash.com/photo-1522201949034-507737bce479?fit=crop&w=650&h=433&q=80"
+     data-srcset="https://images.unsplash.com/photo-1522201949034-507737bce479?fit=crop&w=650&h=433&q=80 650w,
+                  https://images.unsplash.com/photo-1522201949034-507737bce479?fit=crop&w=1300&h=866&q=80 1300w"
+     sizes="(min-width: 650px) 650px, 100vw" width="650" height="433" alt="" uk-img>
+
+
+
 Background image
 To use this component with the CSS background-image property, add it to a <div> or any other element.
 
 <div data-src="" uk-img>...</div>
 PREVIEW
 MARKUP
+
+<div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" data-src="images/photo.jpg" uk-img>
+  <h1>Background Image</h1>
+</div>
+
 Background Image
 Background image with Srcset
 The Image component allows you to use srcset for background images. Just add the data-srcset attribute. If you need the sizes attribute, prefix it as data-sizes.
@@ -41,6 +61,17 @@ The Image component allows you to use srcset for background images. Just add the
 PREVIEW
 MARKUP
 Background Image
+
+
+<div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light"
+     data-src="https://images.unsplash.com/photo-1490822180406-880c226c150b?fit=crop&w=650&h=433&q=80"
+     data-srcset="https://images.unsplash.com/photo-1490822180406-880c226c150b?fit=crop&w=650&h=433&q=80 650w,
+                  https://images.unsplash.com/photo-1490822180406-880c226c150b?fit=crop&w=1300&h=866&q=80 1300w"
+     data-sizes="(min-width: 650px) 650px, 100vw" uk-img>
+    <h1>Background Image</h1>
+</div>
+
+
 Target
 Usually, the image starts loading when it enters the viewport. To start loading images based on the viewport visibility of another element, use the target option. This is very useful to lazy load images in the Slideshow and Slider components.
 
@@ -49,6 +80,29 @@ The following example loads all images in the slides as soon as the slideshow en
 
 PREVIEW
 MARKUP
+
+
+
+<div class="uk-position-relative uk-visible-toggle uk-light" uk-slideshow>
+
+    <ul class="uk-slideshow-items">
+        <li>
+            <img data-src="images/photo.jpg" width="1800" height="1200" alt="" uk-cover uk-img="target: !.uk-slideshow-items">
+        </li>
+        <li>
+            <img data-src="images/dark.jpg" width="1800" height="1200" alt="" uk-cover uk-img="target: !.uk-slideshow-items">
+        </li>
+        <li>
+            <img data-src="images/light.jpg" width="1800" height="1200" alt="" uk-cover uk-img="target: !.uk-slideshow-items">
+        </li>
+    </ul>
+
+    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+
+</div>
+
+
 
 Load previous and next
 It's also possible to load only the image of the active slide and lazy load the images of the other slides. Just target the previous and next slides for each image by using the target: !* -*, !* +* option. There are two exceptions where you have to select the first and the last slides.
@@ -74,6 +128,29 @@ SELECTOR	DESCRIPTION
 </ul>
 PREVIEW
 MARKUP
+
+
+
+<div class="uk-position-relative uk-visible-toggle uk-light" uk-slideshow>
+
+    <ul class="uk-slideshow-items">
+        <li>
+            <img data-src="images/photo.jpg" width="1800" height="1200" alt="" uk-cover uk-img="target: !ul > :last-child, !* +*">
+        </li>
+        <li>
+            <img data-src="images/dark.jpg" width="1800" height="1200" alt="" uk-cover uk-img="target: !* -*, !* +*">
+        </li>
+        <li>
+            <img data-src="images/light.jpg" width="1800" height="1200" alt="" uk-cover uk-img="target: !* -*, !ul > :first-child">
+        </li>
+    </ul>
+
+    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+
+</div>
+
+
 
 Custom placeholder
 By default, the placeholder image is transparent. Use the img[data-src][src*='data:image'] selector to add a custom background or preload animation.
