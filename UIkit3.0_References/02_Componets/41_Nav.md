@@ -201,6 +201,34 @@ HEADER
  Item
  Item
  Item
+
+
+<div class="uk-card uk-card-default uk-card-body uk-width-1-2@s">
+    <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
+        <li class="uk-active"><a href="#">Active</a></li>
+        <li class="uk-parent">
+            <a href="#">Parent</a>
+            <ul class="uk-nav-sub">
+                <li><a href="#">Sub item</a></li>
+                <li><a href="#">Sub item</a></li>
+            </ul>
+        </li>
+        <li class="uk-parent">
+            <a href="#">Parent</a>
+            <ul class="uk-nav-sub">
+                <li><a href="#">Sub item</a></li>
+                <li><a href="#">Sub item</a></li>
+            </ul>
+        </li>
+        <li class="uk-nav-header">Header</li>
+        <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: table"></span> Item</a></li>
+        <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span> Item</a></li>
+        <li class="uk-nav-divider"></li>
+        <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: trash"></span> Item</a></li>
+    </ul>
+</div>
+
+
 Primary modifier
 Add the .uk-nav-primary class to give the nav a more distinct styling, for example when placing it inside a modal.
 
@@ -211,6 +239,30 @@ Active
 Parent
 Parent
 Item
+
+
+<div class="uk-width-1-2@s">
+    <ul class="uk-nav-primary uk-nav-parent-icon" uk-nav>
+        <li class="uk-active"><a href="#">Active</a></li>
+        <li class="uk-parent">
+            <a href="#">Parent</a>
+            <ul class="uk-nav-sub">
+                <li><a href="#">Sub item</a></li>
+                <li><a href="#">Sub item</a></li>
+            </ul>
+        </li>
+        <li class="uk-parent">
+            <a href="#">Parent</a>
+            <ul class="uk-nav-sub">
+                <li><a href="#">Sub item</a></li>
+                <li><a href="#">Sub item</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Item</a></li>
+    </ul>
+</div>
+
+
 Center modifier
 Add the .uk-nav-center class to center nav items. This can be combined with the default and primary style modifiers.
 
@@ -220,6 +272,17 @@ MARKUP
 Active
 Item
 Item
+
+<div class="uk-card uk-card-default uk-card-body uk-width-1-2@s">
+    <ul class="uk-nav-default uk-nav-center uk-nav-parent-icon" uk-nav>
+        <li class="uk-active"><a href="#">Active</a></li>
+        <li><a href="#">Item</a></li>
+        <li><a href="#">Item</a></li>
+    </ul>
+</div>
+
+
+
 Nav in Dropdown
 Add the .uk-dropdown-nav class to place a nav inside a default dropdown from the Dropdown component.
 
@@ -229,6 +292,32 @@ Add the .uk-dropdown-nav class to place a nav inside a default dropdown from the
 PREVIEW
 MARKUP
 HOVER
+
+
+<nav class="uk-navbar-container" uk-navbar>
+    <div class="uk-navbar-left">
+
+        <ul class="uk-navbar-nav">
+            <li>
+                <a href="#">Parent</a>
+                <div class="uk-navbar-dropdown">
+                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                        <li class="uk-active"><a href="#">Active</a></li>
+                        <li><a href="#">Item</a></li>
+                        <li class="uk-nav-header">Header</li>
+                        <li><a href="#">Item</a></li>
+                        <li><a href="#">Item</a></li>
+                        <li class="uk-nav-divider"></li>
+                        <li><a href="#">Item</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+
+    </div>
+</nav>
+
+
 Nav in Navbar
 Add the .uk-navbar-dropdown-nav class to place the nav inside a navbar dropdown from the Navbar component.
 
@@ -238,12 +327,38 @@ Add the .uk-navbar-dropdown-nav class to place the nav inside a navbar dropdown 
 PREVIEW
 MARKUP
 PARENT
+
+
+
+
 Nav in Off-canvas
 A nav can be used inside an off-canvas from the Off-canvas component. No modifier class needs to be added.
 
 PREVIEW
 MARKUP
 OPEN
+
+
+<a href="#offcanvas-slide" class="uk-button uk-button-default" uk-toggle>Open</a>
+
+<div id="offcanvas-slide" uk-offcanvas>
+    <div class="uk-offcanvas-bar">
+
+        <ul class="uk-nav uk-nav-default">
+            <li class="uk-active"><a href="#">Active</a></li>
+            <li><a href="#">Item</a></li>
+            <li class="uk-nav-header">Header</li>
+            <li><a href="#">Item</a></li>
+            <li><a href="#">Item</a></li>
+            <li class="uk-nav-divider"></li>
+            <li><a href="#">Item</a></li>
+        </ul>
+
+    </div>
+</div>
+
+
+
 Component options
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. Learn more
 
