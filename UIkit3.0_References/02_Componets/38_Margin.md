@@ -22,6 +22,12 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 Small margin
 Add one of the following classes to add small spacing to block elements.
 
+
+<div class="uk-margin uk-card uk-card-default uk-card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+<div class="uk-margin uk-card uk-card-default uk-card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+
+
+
 CLASS	DESCRIPTION
 .uk-margin-small	Adds small top margin, if it is preceded by another element, and always bottom margin.
 .uk-margin-small-top	Adds small top margin.
@@ -34,6 +40,12 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 Medium margin
 Add one of the following classes to add medium spacing to block elements.
+
+
+
+<div class="uk-margin-small uk-card uk-card-default uk-card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+<div class="uk-margin-small uk-card uk-card-default uk-card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+
 
 CLASS	DESCRIPTION
 .uk-margin-medium	Adds medium top margin, if it is preceded by another element, and always bottom margin.
@@ -48,6 +60,13 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 Large margin
 Add one of the following classes to add large spacing to block elements.
 
+
+
+<div class="uk-margin-medium uk-card uk-card-default uk-card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+<div class="uk-margin-medium uk-card uk-card-default uk-card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+
+
+
 CLASS	DESCRIPTION
 .uk-margin-large	Adds large margin, if it is preceded by another element, and always bottom margin.
 .uk-margin-large-top	Adds large top margin.
@@ -60,6 +79,12 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 XLarge margin
 Add one of the following classes to add very large spacing to block elements.
+
+
+<div class="uk-margin-large uk-card uk-card-default uk-card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+<div class="uk-margin-large uk-card uk-card-default uk-card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+
+
 
 CLASS	DESCRIPTION
 .uk-margin-xlarge	Adds larger margin, if it is preceded by another element, and always bottom margin.
@@ -74,6 +99,12 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 Remove margin
 Add one of the following classes to remove margin from block elements.
 
+
+<div class="uk-margin-xlarge uk-card uk-card-default uk-card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+<div class="uk-margin-xlarge uk-card uk-card-default uk-card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+
+
+
 CLASS	DESCRIPTION
 .uk-margin-remove	Removes all margins.
 .uk-margin-remove-top	Removes top margin.
@@ -86,6 +117,16 @@ CLASS	DESCRIPTION
 Auto margin
 Add one of the following classes to set auto margin. This can be useful to center or otherwise align block elements with a fixed width as well as flex elements.
 
+
+
+<div class="uk-margin uk-margin-auto-left uk-width-1-2@s uk-card uk-card-default uk-card-body uk-text-center">Block element</div>
+
+<div class="uk-flex uk-height-medium uk-background-muted uk-margin uk-text-center">
+    <div class="uk-margin-auto uk-margin-auto-vertical uk-width-1-2@s uk-card uk-card-default uk-card-body">Flex item</div>
+</div>
+
+
+
 CLASS	DESCRIPTION
 .uk-margin-auto	Sets left and right margin to auto, horizontally centering block and flex elements.
 .uk-margin-auto-top	Sets top margin to auto, pushing block and flex elements to the bottom.
@@ -97,6 +138,15 @@ PREVIEW
 MARKUP
 Block element
 Flex item
+
+
+<div class="uk-margin uk-margin-auto-left uk-width-1-2@s uk-card uk-card-default uk-card-body uk-text-center">Block element</div>
+
+<div class="uk-flex uk-height-medium uk-background-muted uk-margin uk-text-center">
+    <div class="uk-margin-auto uk-margin-auto-vertical uk-width-1-2@s uk-card uk-card-default uk-card-body">Flex item</div>
+</div>
+
+
 Dynamic wrapping
 To add spacing to stacking elements, for example inline elements that wrap on smaller viewports, just add the uk-margin attribute to their parent container. It will automatically add the .uk-margin-small-top class to the lower element.
 
@@ -107,6 +157,21 @@ To add spacing to stacking elements, for example inline elements that wrap on sm
 PREVIEW
 MARKUP
 BUTTON  BUTTON  BUTTON  BUTTON  BUTTON BUTTON  BUTTON  BUTTON  BUTTON  BUTTON
+
+<div uk-margin>
+    <button class="uk-button uk-button-default">Button</button>
+    <button class="uk-button uk-button-default">Button</button>
+    <button class="uk-button uk-button-default">Button</button>
+    <button class="uk-button uk-button-default">Button</button>
+    <button class="uk-button uk-button-default">Button</button>
+    <button class="uk-button uk-button-default">Button</button>
+    <button class="uk-button uk-button-default">Button</button>
+    <button class="uk-button uk-button-default">Button</button>
+    <button class="uk-button uk-button-default">Button</button>
+    <button class="uk-button uk-button-default">Button</button>
+</div>
+
+
 Component options
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. Learn more
 
