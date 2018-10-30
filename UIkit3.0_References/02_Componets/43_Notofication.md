@@ -16,9 +16,14 @@ UIkit.notification({
 UIkit.notification('My message');
 UIkit.notification('My message', status);
 UIkit.notification('My message', { /* options */ });
+
 PREVIEW
 MARKUP
 CLICK ME
+
+<button class="demo uk-button uk-button-default" type="button" onclick="UIkit.notification({message: 'Notification message'})">Click me</button>
+
+
 HTML message
 You can use HTML inside your notification message, like an icon from the Icon component.
 
