@@ -32,6 +32,28 @@ You can use any element to toggle an off-canvas sidebar. To enable the necessary
 PREVIEW
 MARKUP
 OPEN Open
+
+
+
+
+<button class="uk-button uk-button-default uk-margin-small-right" type="button" uk-toggle="target: #offcanvas-usage">Open</button>
+
+<a href="#offcanvas-usage" uk-toggle>Open</a>
+
+<div id="offcanvas-usage" uk-offcanvas>
+    <div class="uk-offcanvas-bar">
+
+        <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+        <h3>Title</h3>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+    </div>
+</div>
+
+
+
 Overlay
 To add an overlay, blanking out the page, add the overlay: true parameter to the uk-offcanvas attribute.
 
