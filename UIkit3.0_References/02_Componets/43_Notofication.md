@@ -77,11 +77,26 @@ PREVIEW
 MARKUP
 PRIMARY  SUCCESS  WARNING  DANGER
 
+
+
+<p uk-margin>
+    <button class="uk-button uk-button-default demo" type="button" onclick="UIkit.notification({message: 'Primary message...', status: 'primary'})">Primary</button>
+    <button class="uk-button uk-button-default demo" type="button" onclick="UIkit.notification({message: 'Success message...', status: 'success'})">Success</button>
+    <button class="uk-button uk-button-default demo" type="button" onclick="UIkit.notification({message: 'Warning message...', status: 'warning'})">Warning</button>
+    <button class="uk-button uk-button-default demo" type="button" onclick="UIkit.notification({message: 'Danger message...', status: 'danger'})">Danger</button>
+</p>
+
+
+
 Close all
 You can close all open notifications by calling UIkit.notification.closeAll().
 
 PREVIEW
 MARKUP
+
+<button class="uk-button uk-button-default close" onclick="UIkit.notification.closeAll()">Close All</button>
+
+
 CLOSE ALL
 Component options
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. Learn more
