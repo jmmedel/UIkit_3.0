@@ -31,6 +31,11 @@ UIkit.notification("<span uk-icon='icon: check'></span> Message");
 PREVIEW
 MARKUP
 WITH ICON
+
+<button class="uk-button uk-button-default demo" type="button" onclick="UIkit.notification({message: '<span uk-icon=\'icon: check\'></span> Message with an icon'})">With icon</button>
+
+
+
 Position
 Add one of the following parameters to adjust the notification's position to different corners.
 
@@ -45,6 +50,19 @@ bottom-right	UIkit.notification("...", {pos: 'bottom-right'})
 PREVIEW
 MARKUP
 TOP LEFT  TOP CENTER  TOP RIGHT  BOTTOM LEFT BOTTOM CENTER  BOTTOM RIGHT
+
+
+
+<p uk-margin>
+    <button class="uk-button uk-button-default" type="button" onclick="UIkit.notification({message: 'Top Left...', pos: 'top-left'})">Top Left</button>
+    <button class="uk-button uk-button-default" type="button" onclick="UIkit.notification({message: 'Top Center...', pos: 'top-center'})">Top Center</button>
+    <button class="uk-button uk-button-default" type="button" onclick="UIkit.notification({message: 'Top Right...', pos: 'top-right'})">Top Right</button>
+    <button class="uk-button uk-button-default" type="button" onclick="UIkit.notification({message: 'Bottom Left...', pos: 'bottom-left'})">Bottom Left</button>
+    <button class="uk-button uk-button-default" type="button" onclick="UIkit.notification({message: 'Bottom Center...', pos: 'bottom-center'})">Bottom Center</button>
+    <button class="uk-button uk-button-default" type="button" onclick="UIkit.notification({message: 'Bottom Right...', pos: 'bottom-right'})">Bottom Right</button>
+</p>
+
+
 
 Style
 A notification can be styled by adding a status to the message to indicate a primary, success, warning or a danger status.
