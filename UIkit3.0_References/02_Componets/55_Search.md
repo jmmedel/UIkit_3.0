@@ -17,6 +17,15 @@ MARKUP
 
 Search...
 Search icon
+
+
+<form class="uk-search uk-search-default">
+    <input class="uk-search-input" type="search" placeholder="Search...">
+</form>
+
+
+
+
 To create a search icon, add the uk-search-icon attribute to a <span> element. To change the alignment, add the .uk-search-icon-flip class.
 
 <form class="uk-search uk-search-default">
@@ -29,6 +38,23 @@ MARKUP
 Search...
  
 Search...
+
+
+<div class="uk-margin">
+    <form class="uk-search uk-search-default">
+        <span uk-search-icon></span>
+        <input class="uk-search-input" type="search" placeholder="Search...">
+    </form>
+</div>
+
+<div class="uk-margin">
+    <form class="uk-search uk-search-default">
+        <span class="uk-search-icon-flip" uk-search-icon></span>
+        <input class="uk-search-input" type="search" placeholder="Search...">
+    </form>
+</div>
+
+
 Clickable
 To enable an action, use an <a> or <button> element to create the icon.
 
