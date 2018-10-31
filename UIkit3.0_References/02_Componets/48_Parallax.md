@@ -89,6 +89,15 @@ Using the viewport option you can adjust the animation duration. The value defin
 PREVIEW
 MARKUP
 Headline
+
+<div class="uk-height-large uk-background-cover uk-light uk-flex uk-flex-top" style="background-image: url('images/dark.jpg');">
+
+    <h1 class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical" uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.5">Headline</h1>
+
+</div>
+
+
+
 Nesting
 Different parallax animations can easily be nested.
 
@@ -98,6 +107,15 @@ Different parallax animations can easily be nested.
 PREVIEW
 MARKUP
 Headline
+
+
+<div class="uk-height-large uk-background-cover uk-light uk-flex uk-flex-top" uk-parallax="bgy: -200" style="background-image: url('images/dark.jpg');">
+
+    <h1 class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical" uk-parallax="y: 100,0">Headline</h1>
+
+</div>
+
+
 Target
 Usually, the animation lasts as long as the element itself is in the viewport. To start and stop the animation based on the viewport visibility of another element, use the target option. This can be helpful when using nested animations.
 
