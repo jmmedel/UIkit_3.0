@@ -9,3 +9,8 @@ This component applies a specially styled area to create a placeholder space, wh
 PREVIEW
 MARKUP
 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+
+
+<div class="uk-placeholder uk-text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+
