@@ -10,6 +10,15 @@ To apply this component, add the uk-parallax attribute to any element. Add an op
 PREVIEW
 MARKUP
 Headline
+
+
+<div class="uk-height-large uk-background-cover uk-light uk-flex" uk-parallax="bgy: -200" style="background-image: url('images/dark.jpg');">
+
+    <h1 class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">Headline</h1>
+
+</div>
+
+
 Animated properties
 You can use explicit CSS property names (e.g. width or scale) and a number of shorthands and special properties (e.g. bgy for background-position-y).
 
