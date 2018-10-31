@@ -15,6 +15,14 @@ CLASS	DESCRIPTION
 PREVIEW
 MARKUP
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+
+<div class="uk-padding uk-background-muted uk-width-1-2@s">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+</div>
+
+
+
 Remove padding
 In some cases you want to remove padding from an element, rather than adding it. To do so, apply one of the following classes.
 
