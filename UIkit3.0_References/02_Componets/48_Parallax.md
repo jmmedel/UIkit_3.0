@@ -125,6 +125,15 @@ Usually, the animation lasts as long as the element itself is in the viewport. T
 PREVIEW
 MARKUP
 Headline
+
+
+<div id="test-target" class="uk-height-large uk-background-cover uk-light uk-flex uk-flex-top" uk-parallax="bgy: -200" style="background-image: url('images/dark.jpg');">
+
+    <h1 class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical" uk-parallax="target: #test-target; y: 100,0">Headline</h1>
+
+</div>
+
+
 Easing
 To adjust the easing of the animation, add the easing option. Lower values will cause a faster transition in the beginning, higher values will cause a faster transition in the end of the animation.
 
@@ -137,6 +146,22 @@ MARKUP
 1
 2
 4
+
+
+<div id="test-easing" class="uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex" style="background-image: url('images/dark.jpg');">
+     <div class="uk-grid uk-margin-auto uk-margin-auto-vertical uk-flex-inline">
+        <div><div class="uk-card uk-card-default uk-padding-small" uk-parallax="target: #test-easing; y: 200; easing: 0">0</div></div>
+        <div><div class="uk-card uk-card-default uk-padding-small" uk-parallax="target: #test-easing; y: 200; easing: 0.5">0.5</div></div>
+        <div><div class="uk-card uk-card-default uk-padding-small" uk-parallax="target: #test-easing; y: 200; easing: 0.6">0.6</div></div>
+        <div><div class="uk-card uk-card-default uk-padding-small" uk-parallax="target: #test-easing; y: 200; easing: 0.8">0.8</div></div>
+        <div><div class="uk-card uk-card-default uk-padding-small" uk-parallax="target: #test-easing; y: 200; easing: 1">1</div></div>
+        <div><div class="uk-card uk-card-default uk-padding-small" uk-parallax="target: #test-easing; y: 200; easing: 2">2</div></div>
+        <div><div class="uk-card uk-card-default uk-padding-small" uk-parallax="target: #test-easing; y: 200; easing: 4;">4</div></div>
+    </div>
+</div>
+
+
+
 Colors
 You can also transition from one color to another, for example for borders, backgrounds or text colors. Define colors using rgb() definitions, color keywords or hex values.
 
@@ -144,6 +169,16 @@ You can also transition from one color to another, for example for borders, back
 PREVIEW
 MARKUP
 Headline
+
+
+<div id="test-color" class="test-color uk-height-large uk-overflow-hidden uk-flex uk-flex-top" uk-parallax="background-color: yellow,white; border-color: #00f,#f00; viewport: 0.5" style="border: 10px solid #000;">
+
+    <h1 class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical" uk-parallax="target: #test-target; color: #0f0; viewport: 0.5">Headline</h1>
+
+</div>
+
+
+
 Filters
 CSS filters are an easy way to add graphical effects to any element on your page. While they are still an experimental feature for some browsers, you can safely use them as long as your usability does not suffer. Using the Parallax component, you can dynamically change the amount of a filter on your element.
 
@@ -151,10 +186,21 @@ CSS filters are an easy way to add graphical effects to any element on your page
 PREVIEW
 MARKUP
 Headline
+
+
+<div id="test-filter" class="uk-height-large uk-background-cover uk-overflow-hidden uk-flex uk-flex-top" uk-parallax="sepia: 100;" style="background-image: url('images/light.jpg');">
+
+    <h1 class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical" uk-parallax="target: #test-filter; blur: 0,10;">Headline</h1>
+
+</div>
+
+
 Responsive
 It's possible to disable the parallax for different device widths by applying the media option to the attribute and adding the appropriate viewport width. Add a number in pixel, for example media: 640, or a breakpoint, for example media: @m. The parallax will be shown from the specified viewport width and upwards, but not below.
 
 <div uk-parallax="media: @m"></div>
+
+
 Component options
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. Learn more
 
