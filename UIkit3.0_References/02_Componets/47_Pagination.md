@@ -1,28 +1,59 @@
 
 
-Padding
-A collection of utility classes to add spacing between elements and their content.
+Pagination
+Easily create a nice looking pagination to navigate through pages.
 
 Usage
-To apply this component, add one of the following classes to a block element.
+The Pagination component consists of button-like styled links, that are aligned side by side in a horizontal list.
 
 CLASS	DESCRIPTION
-.uk-padding	Adds default padding to the element.
-.uk-padding-small	Adds small padding to the element.
-.uk-padding-large	Adds large padding to the element.
-<div class="uk-padding"></div>
+.uk-pagination	Add this class to a <ul> element to define the Pagination component. Use <a> elements as pagination items within the list.
+.uk-active	Add this class to a list item to apply an active state and use a <span> instead of an <a> element.
+.uk-disabled	Add this class to a list item to apply a disabled state and use a <span> instead of an <a> element.
+<ul class="uk-pagination">
+    <li><a href=""></a></li>
+    <li class="uk-active"><span></span></li>
+    <li class="uk-disabled"><span></span></li>
+</ul>
 PREVIEW
 MARKUP
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Remove padding
-In some cases you want to remove padding from an element, rather than adding it. To do so, apply one of the following classes.
+1
+...
+4
+5
+6
+7
+8
+9
+10
+...
+20
+Alignment
+The pagination component utilizes flexbox, so navigations can easily be aligned with the Flex component.
 
-CLASS	DESCRIPTION
-.uk-padding-remove	Removes all padding from an element.
-.uk-padding-remove-top	Removes top padding from an element.
-.uk-padding-remove-bottom	Removes bottom padding from an element.
-.uk-padding-remove-left	Removes left padding from an element.
-.uk-padding-remove-right	Removes right padding from an element.
-.uk-padding-remove-vertical	Removes top and bottom padding from an element.
-.uk-padding-remove-horizontal	Removes left and right padding from an element.
+<ul class="uk-pagination uk-flex-center">...</ul>
+PREVIEW
+MARKUP
+1
+...
+5
+6
+7
+8
+1
+...
+5
+6
+7
+8
+Previous and next
+To apply a previous and next button, add the uk-pagination-previous or uk-pagination-next attribute to a <span> element inside a pagination item.
 
+<ul class="uk-pagination">
+    <li><a href=""><span uk-pagination-previous></span></a></li>
+    <li><a href=""><span uk-pagination-next></span></a></li>
+</ul>
+PREVIEW
+MARKUP
+ Previous
+Next 
