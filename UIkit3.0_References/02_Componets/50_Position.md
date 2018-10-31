@@ -23,6 +23,20 @@ PREVIEW
 MARKUP
 TopBottomLeftRight
 X and Y directions
+
+
+<div class="uk-inline uk-margin">
+
+    <img src="images/photo.jpg" alt="">
+
+    <div class="uk-position-top uk-overlay uk-overlay-default uk-text-center">Top</div>
+    <div class="uk-position-bottom uk-overlay uk-overlay-default uk-text-center">Bottom</div>
+    <div class="uk-position-left uk-overlay uk-overlay-default uk-flex uk-flex-middle">Left</div>
+    <div class="uk-position-right uk-overlay uk-overlay-default uk-flex uk-flex-middle">Right</div>
+
+</div>
+
+
 You can also apply more specific positions that won't spread over one side of the parent container by adding one of the following classes.
 
 CLASS	DESCRIPTION
