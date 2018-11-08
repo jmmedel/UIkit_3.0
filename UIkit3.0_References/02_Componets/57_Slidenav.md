@@ -1,0 +1,47 @@
+
+
+Slidenav
+Defines a navigation with previous and next buttons to flip through slideshows.
+
+Usage
+To create a navigation with previous and next buttons, just add the uk-slidenav attribute to <a> elements. Add the previous or next parameter to the attribute to style the nav items as previous or next buttons.
+
+<a href="" uk-slidenav-next></a>
+<a href="" uk-slidenav-previous></a>
+PREVIEW
+MARKUP
+ 
+Large modifier
+To increase the size of the slidenav icons, add the .uk-slidenav-large class.
+
+<a href="" class="uk-slidenav-large" uk-slidenav-next></a>
+<a href="" class="uk-slidenav-large" uk-slidenav-previous></a>
+PREVIEW
+MARKUP
+ 
+Slidenav container
+To display a conjoint slidenav, wrap the slidenav items inside a <div> element and add the .uk-slidenav-container class, as well as one of the .uk-position-* classes.
+
+<div class="uk-slidenav-container">
+    <a href="" uk-slidenav-previous></a>
+    <a href="" uk-slidenav-next></a>
+</div>
+PREVIEW
+MARKUP
+Position as overlay
+To position the slidenav on top of an element or the Slideshow component for example, just add one of the .uk-position-* classes from the Position component. To create a position context on the container, add the .uk-position-relative class.
+
+Use the .uk-light or .uk-dark class from the Inverse component to apply a light or dark color for better visibility.
+
+<div class="uk-position-relative uk-light">
+
+    <!-- The element which is wrapped goes here -->
+
+    <a class="uk-position-center-left" href="" uk-slidenav-previous></a>
+    <a class="uk-position-center-right" href="" uk-slidenav-next></a>
+
+</div>
+NOTE You can also apply the Visibility component, so that the slidenav only appears on hover.
+
+PREVIEW
+MARKUP
