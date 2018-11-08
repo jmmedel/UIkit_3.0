@@ -212,6 +212,34 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 
+
+
+<div class="uk-section uk-section-primary uk-preserve-color">
+    <div class="uk-container">
+
+        <div class="uk-panel uk-light uk-margin-medium">
+            <h3>Section Primary with cards</h3>
+        </div>
+
+        <div class="uk-grid-match uk-child-width-expand@m" uk-grid>
+            <div>
+                <div class="uk-card uk-card-default uk-card-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-default uk-card-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+
 Size modifier
 You can add different paddings to each section or remove it altogether.
 
@@ -223,6 +251,29 @@ CLASS	DESCRIPTION
 .uk-padding-remove-vertical	Add this class from the Padding component to remove a section's padding.
 PREVIEW
 MARKUP
+
+
+
+<div class="uk-section uk-section-large uk-section-muted">
+    <div class="uk-container">
+
+        <h3>Section Large</h3>
+
+        <div class="uk-grid-match uk-child-width-1-3@m" uk-grid>
+            <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 Section Large
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
 
