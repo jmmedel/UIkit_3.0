@@ -11,6 +11,11 @@ To create a navigation with previous and next buttons, just add the uk-slidenav 
 PREVIEW
 MARKUP
  
+
+<a href="#" uk-slidenav-previous></a>
+<a href="#" uk-slidenav-next></a>
+
+
 Large modifier
 To increase the size of the slidenav icons, add the .uk-slidenav-large class.
 
@@ -45,3 +50,26 @@ NOTE You can also apply the Visibility component, so that the slidenav only appe
 
 PREVIEW
 MARKUP
+
+
+
+<div class="uk-position-relative uk-visible-toggle uk-light" uk-slideshow>
+
+    <ul class="uk-slideshow-items">
+        <li>
+            <img src="images/photo.jpg" alt="" uk-cover>
+        </li>
+        <li>
+            <img src="images/dark.jpg" alt="" uk-cover>
+        </li>
+        <li>
+            <img src="images/light.jpg" alt="" uk-cover>
+        </li>
+    </ul>
+
+    <a class="uk-slidenav-large uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+    <a class="uk-slidenav-large uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+
+</div>
+
+
