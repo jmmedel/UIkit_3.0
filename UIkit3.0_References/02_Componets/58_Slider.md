@@ -909,6 +909,67 @@ Lorem ipsum dolor sit amet.
 Heading
 Lorem ipsum dolor sit amet.
 
+
+
+
+<div class="uk-position-relative uk-visible-toggle uk-light" uk-slider>
+
+    <ul class="uk-slider-items uk-grid">
+        <li class="uk-width-4-5">
+            <div class="uk-panel">
+                <img src="images/photo.jpg" alt="">
+                <div class="uk-position-center uk-text-center">
+                    <h2 uk-slider-parallax="x: 100,-100">Heading</h2>
+                    <p uk-slider-parallax="x: 200,-200">Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+        </li>
+        <li class="uk-width-4-5">
+            <div class="uk-panel">
+                <img src="images/dark.jpg" alt="">
+                <div class="uk-position-center uk-text-center">
+                    <h2 uk-slider-parallax="x: 100,-100">Heading</h2>
+                    <p uk-slider-parallax="x: 200,-200">Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+        </li>
+        <li class="uk-width-4-5">
+            <div class="uk-panel">
+                <img src="images/light.jpg" alt="">
+                <div class="uk-position-center uk-text-center">
+                    <h2 uk-slider-parallax="x: 100,-100">Heading</h2>
+                    <p uk-slider-parallax="x: 200,-200">Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+        </li>
+        <li class="uk-width-4-5">
+            <div class="uk-panel">
+                <img src="images/photo2.jpg" alt="">
+                <div class="uk-position-center uk-text-center">
+                    <h2 uk-slider-parallax="x: 100,-100">Heading</h2>
+                    <p uk-slider-parallax="x: 200,-200">Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+        </li>
+        <li class="uk-width-4-5">
+            <div class="uk-panel">
+                <img src="images/photo3.jpg" alt="">
+                <div class="uk-position-center uk-text-center">
+                    <h2 uk-slider-parallax="x: 100,-100">Heading</h2>
+                    <p uk-slider-parallax="x: 200,-200">Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+        </li>
+    </ul>
+
+    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+
+</div>
+
+
+
+
 Content transitions
 Add clsActivated: uk-transition-active to the attribute to trigger transition classes from the Transition component automatically inside slides. Contrary to the parallax effect, transitions are not attached to the slider animation and start playing independently after the slider animation.
 
@@ -952,6 +1013,63 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 Bottom
 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
+
+<div class="uk-position-relative uk-visible-toggle uk-light" uk-slider="clsActivated: uk-transition-active; center: true">
+
+    <ul class="uk-slider-items uk-grid">
+        <li class="uk-width-3-4">
+            <div class="uk-panel">
+                <img src="images/photo.jpg" alt="">
+                <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                    <h3 class="uk-margin-remove">Bottom</h3>
+                    <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+        </li>
+        <li class="uk-width-3-4">
+            <div class="uk-panel">
+                <img src="images/dark.jpg" alt="">
+                <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                    <h3 class="uk-margin-remove">Bottom</h3>
+                    <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+        </li>
+        <li class="uk-width-3-4">
+            <div class="uk-panel">
+                <img src="images/light.jpg" alt="">
+                <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                    <h3 class="uk-margin-remove">Bottom</h3>
+                    <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+        </li>
+        <li class="uk-width-3-4">
+            <div class="uk-panel">
+                <img src="images/photo2.jpg" alt="">
+                <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                    <h3 class="uk-margin-remove">Bottom</h3>
+                    <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+        </li>
+        <li class="uk-width-3-4">
+            <div class="uk-panel">
+                <img src="images/photo3.jpg" alt="">
+                <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                    <h3 class="uk-margin-remove">Bottom</h3>
+                    <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+        </li>
+    </ul>
+
+    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+
+</div>
+
+
 Toggle on hover
 To toggle transitions on hover, use the .uk-transition-toggle class from the Transition component. This will trigger the transition when the element is hovered.
 
@@ -993,6 +1111,62 @@ MARKUP
 9
 
 10
+
+
+
+<div uk-slider>
+
+    <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m uk-light">
+        <li class="uk-transition-toggle">
+            <img src="images/slider1.jpg" alt="">
+            <div class="uk-position-center uk-panel"><h1 class="uk-transition-slide-bottom-small">1</h1></div>
+        </li>
+        <li class="uk-transition-toggle">
+            <img src="images/slider2.jpg" alt="">
+            <div class="uk-position-center uk-panel"><h1 class="uk-transition-slide-bottom-small">2</h1></div>
+        </li>
+        <li class="uk-transition-toggle">
+            <img src="images/slider3.jpg" alt="">
+            <div class="uk-position-center uk-panel"><h1 class="uk-transition-slide-bottom-small">3</h1></div>
+        </li>
+        <li class="uk-transition-toggle">
+            <img src="images/slider4.jpg" alt="">
+            <div class="uk-position-center uk-panel"><h1 class="uk-transition-slide-bottom-small">4</h1></div>
+        </li>
+        <li class="uk-transition-toggle">
+            <img src="images/slider5.jpg" alt="">
+            <div class="uk-position-center uk-panel"><h1 class="uk-transition-slide-bottom-small">5</h1></div>
+        </li>
+        <li class="uk-transition-toggle">
+            <img src="images/slider1.jpg" alt="">
+            <div class="uk-position-center uk-panel"><h1 class="uk-transition-slide-bottom-small">6</h1></div>
+        </li>
+        <li class="uk-transition-toggle">
+            <img src="images/slider2.jpg" alt="">
+            <div class="uk-position-center uk-panel"><h1 class="uk-transition-slide-bottom-small">7</h1></div>
+        </li>
+        <li class="uk-transition-toggle">
+            <img src="images/slider3.jpg" alt="">
+            <div class="uk-position-center uk-panel"><h1 class="uk-transition-slide-bottom-small">8</h1></div>
+        </li>
+        <li class="uk-transition-toggle">
+            <img src="images/slider4.jpg" alt="">
+            <div class="uk-position-center uk-panel"><h1 class="uk-transition-slide-bottom-small">9</h1></div>
+        </li>
+        <li class="uk-transition-toggle">
+            <img src="images/slider5.jpg" alt="">
+            <div class="uk-position-center uk-panel"><h1 class="uk-transition-slide-bottom-small">10</h1></div>
+        </li>
+    </ul>
+
+    <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+
+</div>
+
+
+
+
+
 Component options
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. Learn more
 
