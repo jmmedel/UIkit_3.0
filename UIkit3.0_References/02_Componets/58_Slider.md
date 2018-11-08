@@ -421,6 +421,66 @@ MARKUP
 9
 
 10
+
+
+<div uk-slider>
+
+    <div class="uk-position-relative uk-visible-toggle uk-light">
+
+        <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
+            <li>
+                <img src="images/slider1.jpg" alt="">
+                <div class="uk-position-center uk-panel"><h1>1</h1></div>
+            </li>
+            <li>
+                <img src="images/slider2.jpg" alt="">
+                <div class="uk-position-center uk-panel"><h1>2</h1></div>
+            </li>
+            <li>
+                <img src="images/slider3.jpg" alt="">
+                <div class="uk-position-center uk-panel"><h1>3</h1></div>
+            </li>
+            <li>
+                <img src="images/slider4.jpg" alt="">
+                <div class="uk-position-center uk-panel"><h1>4</h1></div>
+            </li>
+            <li>
+                <img src="images/slider5.jpg" alt="">
+                <div class="uk-position-center uk-panel"><h1>5</h1></div>
+            </li>
+            <li>
+                <img src="images/slider1.jpg" alt="">
+                <div class="uk-position-center uk-panel"><h1>6</h1></div>
+            </li>
+            <li>
+                <img src="images/slider2.jpg" alt="">
+                <div class="uk-position-center uk-panel"><h1>7</h1></div>
+            </li>
+            <li>
+                <img src="images/slider3.jpg" alt="">
+                <div class="uk-position-center uk-panel"><h1>8</h1></div>
+            </li>
+            <li>
+                <img src="images/slider4.jpg" alt="">
+                <div class="uk-position-center uk-panel"><h1>9</h1></div>
+            </li>
+            <li>
+                <img src="images/slider5.jpg" alt="">
+                <div class="uk-position-center uk-panel"><h1>10</h1></div>
+            </li>
+        </ul>
+
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+
+    </div>
+
+    <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+
+</div>
+
+
+
 NOTE For better visibility of overlaying navigations, add the .uk-light or .uk-dark class from the Inverse component.
 
 Navigation outside
@@ -464,6 +524,75 @@ MARKUP
 9
 
 10
+
+
+<div uk-slider>
+
+    <div class="uk-position-relative">
+
+        <div class="uk-slider-container uk-light">
+            <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
+                <li>
+                    <img src="images/slider1.jpg" alt="">
+                    <div class="uk-position-center uk-panel"><h1>1</h1></div>
+                </li>
+                <li>
+                    <img src="images/slider2.jpg" alt="">
+                    <div class="uk-position-center uk-panel"><h1>2</h1></div>
+                </li>
+                <li>
+                    <img src="images/slider3.jpg" alt="">
+                    <div class="uk-position-center uk-panel"><h1>3</h1></div>
+                </li>
+                <li>
+                    <img src="images/slider4.jpg" alt="">
+                    <div class="uk-position-center uk-panel"><h1>4</h1></div>
+                </li>
+                <li>
+                    <img src="images/slider5.jpg" alt="">
+                    <div class="uk-position-center uk-panel"><h1>5</h1></div>
+                </li>
+                <li>
+                    <img src="images/slider1.jpg" alt="">
+                    <div class="uk-position-center uk-panel"><h1>6</h1></div>
+                </li>
+                <li>
+                    <img src="images/slider2.jpg" alt="">
+                    <div class="uk-position-center uk-panel"><h1>7</h1></div>
+                </li>
+                <li>
+                    <img src="images/slider3.jpg" alt="">
+                    <div class="uk-position-center uk-panel"><h1>8</h1></div>
+                </li>
+                <li>
+                    <img src="images/slider4.jpg" alt="">
+                    <div class="uk-position-center uk-panel"><h1>9</h1></div>
+                </li>
+                <li>
+                    <img src="images/slider5.jpg" alt="">
+                    <div class="uk-position-center uk-panel"><h1>10</h1></div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="uk-hidden@s uk-light">
+            <a class="uk-position-center-left uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
+        </div>
+
+        <div class="uk-visible@s">
+            <a class="uk-position-center-left-out uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right-out uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
+        </div>
+
+    </div>
+
+    <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+
+</div>
+
+
+
 Viewport height
 Adding the uk-height-viewport attribute from the Height component to the list of slider items will stretch the height of the <ul> and <li> elements to fill the whole viewport height. Since the width and height now aren't defined by the item's content anymore, you have to use absolute positioning for the content.
 
@@ -490,6 +619,49 @@ MARKUP
 4
 
 5
+
+
+<div class="uk-position-relative uk-visible-toggle uk-light" uk-slider="center: true">
+
+    <ul class="uk-slider-items uk-grid uk-grid-match" uk-height-viewport="offset-top: true; offset-bottom: 30">
+        <li class="uk-width-3-4">
+            <div class="uk-cover-container">
+                <img src="images/photo.jpg" alt="" uk-cover>
+                <div class="uk-position-center uk-panel"><h1>1</h1></div>
+            </div>
+        </li>
+        <li class="uk-width-3-4">
+            <div class="uk-cover-container">
+                <img src="images/dark.jpg" alt="" uk-cover>
+                <div class="uk-position-center uk-panel"><h1>2</h1></div>
+            </div>
+        </li>
+        <li class="uk-width-3-4">
+            <div class="uk-cover-container">
+                <img src="images/light.jpg" alt="" uk-cover>
+                <div class="uk-position-center uk-panel"><h1>3</h1></div>
+            </div>
+        </li>
+        <li class="uk-width-3-4">
+            <div class="uk-cover-container">
+                <img src="images/photo2.jpg" alt="" uk-cover>
+                <div class="uk-position-center uk-panel"><h1>4</h1></div>
+            </div>
+        </li>
+        <li class="uk-width-3-4">
+            <div class="uk-cover-container">
+                <img src="images/photo3.jpg" alt="" uk-cover>
+                <div class="uk-position-center uk-panel"><h1>5</h1></div>
+            </div>
+        </li>
+    </ul>
+
+    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+
+</div>
+
+
 NOTE This example is set to 70% of the viewport height.
 
 Content
@@ -516,6 +688,81 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 Headline
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+
+
+
+<div uk-slider="center: true">
+
+    <div class="uk-position-relative uk-visible-toggle uk-light">
+
+        <ul class="uk-slider-items uk-child-width-1-2@s uk-grid">
+            <li>
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                        <img src="images/photo.jpg" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Headline</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                        <img src="images/dark.jpg" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Headline</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                        <img src="images/light.jpg" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Headline</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                        <img src="images/photo2.jpg" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Headline</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                        <img src="images/photo3.jpg" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Headline</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+
+    </div>
+
+    <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+
+</div>
+
+
 
 NOTE Since the slider effect needs a clipping container, box shadows of content items are also clipped. To get the best visual result, it's recommended to use the uk-slider="center: true" mode if your content items have a box shadow.
 
@@ -558,6 +805,61 @@ MARKUP
 9
 
 10
+
+
+
+<div class="uk-position-relative uk-visible-toggle uk-light" uk-slider>
+
+    <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
+        <li>
+            <img src="images/slider1.jpg" alt="">
+            <div class="uk-position-center uk-panel"><h1>1</h1></div>
+        </li>
+        <li>
+            <img src="images/slider2.jpg" alt="">
+            <div class="uk-position-center uk-panel"><h1>2</h1></div>
+        </li>
+        <li>
+            <img src="images/slider3.jpg" alt="">
+            <div class="uk-position-center uk-panel"><h1>3</h1></div>
+        </li>
+        <li>
+            <img src="images/slider4.jpg" alt="">
+            <div class="uk-position-center uk-panel"><h1>4</h1></div>
+        </li>
+        <li>
+            <img src="images/slider5.jpg" alt="">
+            <div class="uk-position-center uk-panel"><h1>5</h1></div>
+        </li>
+        <li>
+            <img src="images/slider1.jpg" alt="">
+            <div class="uk-position-center uk-panel"><h1>6</h1></div>
+        </li>
+        <li>
+            <img src="images/slider2.jpg" alt="">
+            <div class="uk-position-center uk-panel"><h1>7</h1></div>
+        </li>
+        <li>
+            <img src="images/slider3.jpg" alt="">
+            <div class="uk-position-center uk-panel"><h1>8</h1></div>
+        </li>
+        <li>
+            <img src="images/slider4.jpg" alt="">
+            <div class="uk-position-center uk-panel"><h1>9</h1></div>
+        </li>
+        <li>
+            <img src="images/slider5.jpg" alt="">
+            <div class="uk-position-center uk-panel"><h1>10</h1></div>
+        </li>
+    </ul>
+
+    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+
+</div>
+
+
+
 Content parallax
 Add the uk-slider-parallax attribute to any element inside the slides to animate it together with the slider animation. Add an option with the desired animation values for each CSS property you want to animate. Define at least one start and end value. It can be done by passing two values separated by a comma.
 
