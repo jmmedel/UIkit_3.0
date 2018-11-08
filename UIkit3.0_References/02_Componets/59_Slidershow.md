@@ -242,6 +242,27 @@ By default, the slideshow height adopts to the defined ratio. A minimum or maxim
 PREVIEW
 MARKUP
 
+
+<div class="uk-position-relative uk-visible-toggle uk-light" uk-slideshow="min-height: 300; max-height: 600; animation: push">
+
+    <ul class="uk-slideshow-items">
+        <li>
+            <img src="images/photo.jpg" alt="" uk-cover>
+        </li>
+        <li>
+            <img src="images/dark.jpg" alt="" uk-cover>
+        </li>
+        <li>
+            <img src="images/light.jpg" alt="" uk-cover>
+        </li>
+    </ul>
+
+    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+
+</div>
+
+
 Viewport height
 Adding the uk-height-viewport attribute from the Height component to the list of slideshow items will stretch the height to fill the whole viewport. You can set the min-height option to define a minimum height.
 
@@ -250,6 +271,28 @@ Adding the uk-height-viewport attribute from the Height component to the list of
 </div>
 PREVIEW
 MARKUP
+
+
+<div class="uk-position-relative uk-visible-toggle uk-light" uk-slideshow>
+
+    <ul class="uk-slideshow-items" uk-height-viewport="offset-top: true; offset-bottom: 30">
+        <li>
+            <img src="images/photo.jpg" alt="" uk-cover>
+        </li>
+        <li>
+            <img src="images/dark.jpg" alt="" uk-cover>
+        </li>
+        <li>
+            <img src="images/light.jpg" alt="" uk-cover>
+        </li>
+    </ul>
+
+    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+
+</div>
+
+
 
 NOTE This example is set to 70% of the viewport height.
 
@@ -284,6 +327,35 @@ If there is no item specific content in the navigation items, you can also add t
 PREVIEW
 MARKUP
 
+
+
+<div uk-slideshow="animation: push">
+
+    <div class="uk-position-relative uk-visible-toggle uk-light">
+
+        <ul class="uk-slideshow-items">
+            <li>
+                <img src="images/photo.jpg" alt="" uk-cover>
+            </li>
+            <li>
+                <img src="images/dark.jpg" alt="" uk-cover>
+            </li>
+            <li>
+                <img src="images/light.jpg" alt="" uk-cover>
+            </li>
+        </ul>
+
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+
+    </div>
+
+    <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin"></ul>
+
+</div>
+
+
+
 NOTE For better visibility of overlaying navigations, add the .uk-light or .uk-dark class from the Inverse component.
 
 Videos
@@ -302,6 +374,32 @@ The slideshow is not restricted to images. Other media, like videos, can be posi
 PREVIEW
 MARKUP
 
+
+
+<div class="uk-position-relative uk-visible-toggle uk-light" uk-slideshow="animation: push">
+
+    <ul class="uk-slideshow-items">
+        <li>
+            <img src="images/photo.jpg" alt="" uk-cover>
+        </li>
+        <li>
+            <video autoplay loop muted playslinline uk-cover>
+                <source src="https://quirksmode.org/html5/videos/big_buck_bunny.mp4" type="video/mp4">
+                <source src="https://quirksmode.org/html5/videos/big_buck_bunny.ogv" type="video/ogg">
+            </video>
+        </li>
+        <li>
+            <iframe src="https://www.youtube-nocookie.com/embed/YE7VzlLtp-4?autoplay=1&amp;controls=0&amp;showinfo=0&amp;rel=0&amp;loop=1&amp;modestbranding=1&amp;wmode=transparent&amp;playsinline=1" width="560" height="315" frameborder="0" allowfullscreen uk-cover></iframe>
+        </li>
+    </ul>
+
+    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+
+</div>
+
+
+
 Ken Burns effect
 To add a simple Ken Burns effect, wrap the image with a div and add the .uk-position-cover and .uk-animation-kenburns classes. You can also apply the .uk-animation-reverse or one of the .uk-transform-origin-* classes from the Utility component to modify the effect.
 
@@ -316,6 +414,35 @@ To add a simple Ken Burns effect, wrap the image with a div and add the .uk-posi
 </div>
 PREVIEW
 MARKUP
+
+
+
+<div class="uk-position-relative uk-visible-toggle uk-light" uk-slideshow="animation: push">
+
+    <ul class="uk-slideshow-items">
+        <li>
+            <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-center-left">
+                <img src="images/photo.jpg" alt="" uk-cover>
+            </div>
+        </li>
+        <li>
+            <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-top-right">
+                <img src="images/dark.jpg" alt="" uk-cover>
+            </div>
+        </li>
+        <li>
+            <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-bottom-left">
+                <img src="images/light.jpg" alt="" uk-cover>
+            </div>
+        </li>
+    </ul>
+
+    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+
+</div>
+
+
 
 Content overlays
 Add content overlays using the Position component. It allows you to place the content anywhere inside the slide.
@@ -336,6 +463,51 @@ NOTE To adapt your content for better visibility on each image, add the .uk-ligh
 
 PREVIEW
 MARKUP
+
+
+
+<div class="uk-position-relative uk-visible-toggle" uk-slideshow="animation: push">
+
+    <ul class="uk-slideshow-items">
+        <li>
+            <img src="images/photo.jpg" alt="" uk-cover>
+            <div class="uk-position-center uk-position-small uk-text-center uk-light">
+                <h2 class="uk-margin-remove">Center</h2>
+                <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </li>
+        <li>
+            <img src="images/dark.jpg" alt="" uk-cover>
+            <div class="uk-position-bottom uk-position-medium uk-text-center uk-light">
+                <h3 class="uk-margin-remove">Bottom</h3>
+                <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </li>
+        <li>
+            <img src="images/light.jpg" alt="" uk-cover>
+            <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center">
+                <h3 class="uk-margin-remove">Overlay Bottom</h3>
+                <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </li>
+        <li>
+            <img src="images/dark.jpg" alt="" uk-cover>
+            <div class="uk-overlay uk-overlay-default uk-position-bottom-right uk-position-small">
+                <h3 class="uk-margin-remove">Overlay Bottom Right</h3>
+                <p class="uk-margin-remove">Lorem ipsum dolor sit amet.</p>
+            </div>
+        </li>
+    </ul>
+
+    <div class="uk-light">
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+    </div>
+
+</div>
+
+
+
 
 Center
 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -369,6 +541,40 @@ The next example defines different in and out animations. The content slides in 
 <div uk-slideshow-parallax="x: 100,0,0; opacity: 1,1,0">...</div>
 PREVIEW
 MARKUP
+
+
+<div class="uk-position-relative uk-visible-toggle uk-light" uk-slideshow="animation: push">
+
+    <ul class="uk-slideshow-items">
+        <li>
+            <img src="images/photo.jpg" alt="" uk-cover>
+            <div class="uk-position-center uk-position-small uk-text-center">
+                <h2 uk-slideshow-parallax="x: 100,-100">Heading</h2>
+                <p uk-slideshow-parallax="x: 200,-200">Lorem ipsum dolor sit amet.</p>
+            </div>
+        </li>
+        <li>
+            <img src="images/dark.jpg" alt="" uk-cover>
+            <div class="uk-position-center uk-position-small uk-text-center">
+                <h2 uk-slideshow-parallax="x: 100,-100">Heading</h2>
+                <p uk-slideshow-parallax="x: 200,-200">Lorem ipsum dolor sit amet.</p>
+            </div>
+        </li>
+        <li>
+            <img src="images/light.jpg" alt="" uk-cover>
+            <div class="uk-position-center uk-position-small uk-text-center">
+                <h2 uk-slideshow-parallax="y: -50,0,0; opacity: 1,1,0">Heading</h2>
+                <p uk-slideshow-parallax="y: 50,0,0; opacity: 1,1,0">Lorem ipsum dolor sit amet.</p>
+            </div>
+        </li>
+    </ul>
+
+    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+
+</div>
+
+
 
 Heading
 Lorem ipsum dolor sit amet.
@@ -413,8 +619,95 @@ Transition classes from the Transition component are triggered automatically ins
 </div>
 Together with the Overlay component, content transitions are used to build a classic caption for the slideshow.
 
+
+
+<div class="uk-position-relative uk-visible-toggle uk-light" uk-slideshow="animation: push">
+
+    <ul class="uk-slideshow-items">
+        <li>
+            <div class="uk-position-cover" uk-slideshow-parallax="scale: 1.2,1.2,1">
+                <img src="images/photo.jpg" alt="" uk-cover>
+            </div>
+            <div class="uk-position-cover" uk-slideshow-parallax="opacity: 0,0,0.2; backgroundColor: #000,#000"></div>
+            <div class="uk-position-center uk-position-medium uk-text-center">
+                <div uk-slideshow-parallax="scale: 1,1,0.8">
+                    <h2 uk-slideshow-parallax="x: 200,0,0">Heading</h2>
+                    <p uk-slideshow-parallax="x: 400,0,0;">Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="uk-position-cover" uk-slideshow-parallax="scale: 1.2,1.2,1">
+                <img src="images/dark.jpg" alt="" uk-cover>
+            </div>
+            <div class="uk-position-cover" uk-slideshow-parallax="opacity: 0,0,0.2; backgroundColor: #000,#000"></div>
+            <div class="uk-position-center uk-position-medium uk-text-center">
+                <div uk-slideshow-parallax="scale: 1,1,0.8">
+                    <h2 uk-slideshow-parallax="x: 200,0,0">Heading</h2>
+                    <p uk-slideshow-parallax="x: 400,0,0;">Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="uk-position-cover" uk-slideshow-parallax="scale: 1.2,1.2,1">
+                <img src="images/light.jpg" alt="" uk-cover>
+            </div>
+            <div class="uk-position-cover" uk-slideshow-parallax="opacity: 0,0,0.2; backgroundColor: #000,#000"></div>
+            <div class="uk-position-center uk-position-medium uk-text-center">
+                <div uk-slideshow-parallax="scale: 1,1,0.8">
+                    <h2 uk-slideshow-parallax="x: 200,0,0">Heading</h2>
+                    <p uk-slideshow-parallax="x: 400,0,0;">Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+        </li>
+    </ul>
+
+    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+
+</div>
+
+
+
 PREVIEW
 MARKUP
+
+
+
+<div class="uk-position-relative uk-visible-toggle uk-light" uk-slideshow="animation: fade">
+
+    <ul class="uk-slideshow-items">
+        <li>
+            <img src="images/photo.jpg" alt="" uk-cover>
+            <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                <h3 class="uk-margin-remove">Bottom</h3>
+                <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </li>
+        <li>
+            <img src="images/dark.jpg" alt="" uk-cover>
+            <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                <h3 class="uk-margin-remove">Bottom</h3>
+                <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </li>
+        <li>
+            <img src="images/light.jpg" alt="" uk-cover>
+            <div class="uk-overlay uk-overlay-primary uk-position-right uk-text-center uk-transition-slide-right uk-width-medium">
+                <h3 class="uk-margin-remove">Left</h3>
+                <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </li>
+    </ul>
+
+    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+
+</div>
+
+
+
+
 
 Bottom
 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
