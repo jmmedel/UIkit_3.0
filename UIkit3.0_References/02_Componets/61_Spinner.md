@@ -16,4 +16,5 @@ Add the ratio: 3 parameter to the uk-spinner attribute to triple its size – or
 PREVIEW
 MARKUP
  
- 
+ <span class="uk-margin-small-right" uk-spinner="ratio: 3"></span>
+<span uk-spinner="ratio: 4.5"></span>
