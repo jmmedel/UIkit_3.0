@@ -9,6 +9,10 @@ To create an element that remains at the top of the viewport when scrolling down
 PREVIEW
 MARKUP
 Stick to the top
+
+<div class="uk-card uk-card-default uk-card-body" style="z-index: 980;" uk-sticky="bottom: #offset">Stick to the top</div>
+
+
 NOTE Example elements on this page are only sticky until you scroll down to the next heading and disappear afterwards. This was done so as not to clutter your screen with all variations of sticky containers.
 
 Offset
@@ -18,6 +22,12 @@ You can position the element below the viewport edge. Add the offset attribute a
 PREVIEW
 MARKUP
 Stick 100px below the top
+
+<div class="uk-card uk-card-default uk-card-body" style="z-index: 980;" uk-sticky="offset: 100; bottom: #top">Stick 100px below the top</div>
+
+
+
+
 Top
 To apply the sticky behavior with a delay, add the top attribute, which can be defined either by a number representing the offset in pixels, but also viewport height or a CSS selector.
 
@@ -35,6 +45,22 @@ PREVIEW
 MARKUP
 Stick to the top but only after 200px scrolling
 Stick to the top but below the box
+
+
+<div class="uk-child-width-1-2@s" uk-grid>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body" style="z-index: 980;" uk-sticky="top: 200; bottom: #animation">Stick to the top but only after 200px scrolling</div>
+    </div>
+    <div>
+        <div id="container-1" class="uk-background-muted uk-height-medium" style="margin-bottom: 200px;">
+            <div class="uk-card uk-card-default uk-card-body" style="z-index: 980;" uk-sticky="top: #container-1; bottom: #animation">Stick to the top but below the box</div>
+        </div>
+    </div>
+</div>
+
+
+
+
 Animation
 Add an animation from the Animation component in order to have the sticky element reappear smoothly.
 
