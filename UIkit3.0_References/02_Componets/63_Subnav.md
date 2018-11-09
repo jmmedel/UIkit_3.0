@@ -22,6 +22,18 @@ ACTIVE
 ITEM
 ITEM
 DISABLED
+
+
+<ul class="uk-subnav" uk-margin>
+    <li class="uk-active"><a href="#">Active</a></li>
+    <li><a href="#">Item</a></li>
+    <li><a href="#">Item</a></li>
+    <li><span>Disabled</span></li>
+</ul>
+
+
+
+
 NOTE For a better layout, if items should wrap into the next row, add the uk-margin attribute from the Margin component.
 
 Divider modifier
@@ -33,6 +45,16 @@ MARKUP
 ACTIVE
 ITEM
 ITEM
+
+
+<ul class="uk-subnav uk-subnav-divider" uk-margin>
+    <li class="uk-active"><a href="#">Active</a></li>
+    <li><a href="#">Item</a></li>
+    <li><a href="#">Item</a></li>
+</ul>
+
+
+
 Pill modifier
 Add the .uk-subnav-pill class to highlight the active menu item with a background.
 
@@ -42,6 +64,15 @@ MARKUP
 ACTIVE
 ITEM
 ITEM
+
+
+<ul class="uk-subnav uk-subnav-pill" uk-margin>
+    <li class="uk-active"><a href="#">Active</a></li>
+    <li><a href="#">Item</a></li>
+    <li><a href="#">Item</a></li>
+</ul>
+
+
 Subnav with Dropdown
 You can also use a dropdown from the Dropdown component with a subnav.
 
@@ -56,3 +87,25 @@ MARKUP
 ACTIVE
 ITEM
 MORE 
+
+
+
+<ul class="uk-subnav uk-subnav-pill" uk-margin>
+    <li class="uk-active"><a href="#">Active</a></li>
+    <li><a href="#">Item</a></li>
+    <li>
+        <a href="#">More <span uk-icon="icon:  triangle-down"></span></a>
+        <div uk-dropdown="mode: click;">
+            <ul class="uk-nav uk-dropdown-nav">
+                <li class="uk-active"><a href="#">Active</a></li>
+                <li><a href="#">Item</a></li>
+                <li class="uk-nav-header">Header</li>
+                <li><a href="#">Item</a></li>
+                <li><a href="#">Item</a></li>
+                <li class="uk-nav-divider"></li>
+                <li><a href="#">Item</a></li>
+            </ul>
+        </div>
+    </li>
+</ul>
+
