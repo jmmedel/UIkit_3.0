@@ -1,0 +1,193 @@
+
+Tab
+Create a tabbed navigation with different styles.
+
+Usage
+The tab component consists of clickable tabs, that are aligned side by side in a list. Its JavaScript functionality extends the Switcher component and is necessary to dynamically transition through different contents using the tabbed navigation.
+
+CLASS/ATTRIBUTE	DESCRIPTION
+uk-tab	Add this attribute to a <ul> element to define the Tab component. Use <a> elements as tab items within the list.
+.uk-active	Add this class to a list item to apply an active state.
+.uk-disabled	Add this class to a list item to apply a disabled state. Also remove the href attribute from the anchor to make it inaccessible through keyboard navigation.
+<ul uk-tab>
+    <li class="uk-active"><a href=""></a></li>
+    <li><a href=""></a></li>
+    <li class="uk-disabled"><a></a></li>
+</ul>
+PREVIEW
+MARKUP
+LEFT
+ITEM
+ITEM
+DISABLED
+
+
+<ul uk-tab>
+    <li class="uk-active"><a href="#">Left</a></li>
+    <li><a href="#">Item</a></li>
+    <li><a href="#">Item</a></li>
+    <li class="uk-disabled"><a>Disabled</a></li>
+</ul>
+
+
+
+Bottom modifier
+Add the .uk-tab-bottom class to flip tab items to the bottom.
+
+<ul class="uk-tab-bottom" uk-tab>...</ul>
+PREVIEW
+MARKUP
+LEFT
+ITEM
+ITEM
+
+
+<ul class="uk-tab-bottom" uk-tab>
+    <li class="uk-active"><a href="#">Left</a></li>
+    <li><a href="#">Item</a></li>
+    <li><a href="#">Item</a></li>
+</ul>
+
+
+Left/Right modifiers
+Add the .uk-tab-left or .uk-tab-right class to align tabs vertically to the left or right side. To save space, the alignment automatically switches back to horizontal when the viewport width goes below 960px.
+
+When using the vertical alignment, you will usually create a grid to apply the layout as seen in the Switcher example.
+
+<ul class="uk-tab-left" uk-tab>...</ul>
+
+<ul class="uk-tab-right" uk-tab>...</ul>
+PREVIEW
+MARKUP
+LEFT
+ITEM
+ITEM
+RIGHT
+ITEM
+ITEM
+
+<div class="uk-child-width-1-2@s" uk-grid>
+    <div>
+        <ul class="uk-tab-left" uk-tab>
+            <li class="uk-active"><a href="#">Left</a></li>
+            <li><a href="#">Item</a></li>
+            <li><a href="#">Item</a></li>
+        </ul>
+    </div>
+
+    <div>
+        <ul class="uk-tab-right" uk-tab>
+            <li class="uk-active"><a href="#">Right</a></li>
+            <li><a href="#">Item</a></li>
+            <li><a href="#">Item</a></li>
+        </ul>
+    </div>
+</div>
+
+
+
+Responsive
+To change the default breakpoint between the vertical and horizontal alignment, just apply the media option to the attribute with the appropriate viewport width. Add a number in pixel, for example media: 640, or a breakpoint, for example media: @m.
+
+<ul class="uk-tab-left" uk-tab="media: @s">...</ul>
+Alignment
+You can combine tabs with the Flex component or the Width component to modify the alignment of the navigations.
+
+<ul class="uk-flex-right" uk-tab>...</ul>
+PREVIEW
+MARKUP
+CENTER
+ITEM
+ITEM
+RIGHT
+ITEM
+ITEM
+JUSTIFY
+ITEM
+ITEM
+ITEM
+
+
+<div class="uk-margin-medium-top">
+    <ul class="uk-flex-center" uk-tab>
+        <li class="uk-active"><a href="#">Center</a></li>
+        <li><a href="#">Item</a></li>
+        <li><a href="#">Item</a></li>
+    </ul>
+</div>
+
+<div>
+    <ul class="uk-flex-right" uk-tab>
+        <li class="uk-active"><a href="#">Right</a></li>
+        <li><a href="#">Item</a></li>
+        <li><a href="#">Item</a></li>
+    </ul>
+</div>
+
+<div>
+    <ul class="uk-child-width-expand" uk-tab>
+        <li class="uk-active"><a href="#">Justify</a></li>
+        <li><a href="#">Item</a></li>
+        <li><a href="#">Item</a></li>
+        <li><a href="#">Item</a></li>
+    </ul>
+</div>
+
+
+
+Tabs and Dropdown
+Tabs can be used to trigger a dropdown menu from the Dropdown component.
+
+<ul uk-tab>
+    <li>
+
+        <!-- This is the menu item toggling the dropdown -->
+        <a href=""></a>
+
+        <!-- This is the dropdown -->
+        <div uk-dropdown="mode: click">
+            <ul class="uk-nav uk-dropdown-nav">...</ul>
+        </div>
+
+    </li>
+</ul>
+PREVIEW
+MARKUP
+ACTIVE
+ITEM
+MORE 
+Component options
+Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. Learn more
+
+OPTION	VALUE	DEFAULT	DESCRIPTION
+connect	CSS selector	false	Related item's container. By default, this is the next element with the 'uk-switcher' class.
+toggle	CSS selector	> *	The toggle selector, which triggers content switching on click.
+active	Number	0	Active index on init. Providing a negative number indicates a position starting from the end of the set.
+animation	String	false	The space separated names of animations to use. Comma separate for animation out.
+duration	Number	200	The animation duration.
+swiping	Boolean	true	Use swiping.
+media	Integer, String	960	When to switch to horizontal mode - a width as integer (e.g. 640) or a breakpoint (e.g. @s, @m, @l, @xl) or any valid media query (e.g. (min-width: 900px)).
+JavaScript
+Learn more about JavaScript components.
+
+Initialization
+UIkit.tab(element, options);
+Events
+The following events will be triggered on the connected items of the elements with this component attached:
+
+NAME	DESCRIPTION
+beforeshow	Fires before an item is shown. Can prevent showing by returning false.
+show	Fires after an item is shown.
+shown	Fires after the item's show animation has completed.
+beforehide	Fires before an item is hidden. Can prevent hiding by returning false.
+hide	Fires after an item's hide animation has started.
+hidden	Fires after an item is hidden.
+Methods
+The following methods are available for the component:
+
+Show
+UIkit.tab(element).show(index);
+Shows the Tab item with given index.
+
+NAME	TYPE	DEFAULT	DESCRIPTION
+index	String, Integer, Node	0	Tab item to show. 0 based index.
