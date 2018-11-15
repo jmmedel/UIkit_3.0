@@ -390,6 +390,14 @@ Small
 Medium
 Large
 XLarge
+
+
+<img class="uk-border-rounded" src="images/avatar.jpg" width="200" height="200" alt="Border rounded">
+<img class="uk-border-circle" src="images/avatar.jpg" width="200" height="200" alt="Border circle">
+<img class="uk-border-pill" src="images/avatar.jpg" width="200" height="200" alt="Border pill">
+
+
+
 Box shadow bottom
 To apply a box shadow at the bottom of an element so that appears to be hovering, add the .uk-box-shadow-bottom class. This can also be combined with one of the other .uk-box-shadow-* modifiers.
 
@@ -419,6 +427,14 @@ PREVIEW
 MARKUP
 Dorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
+
+<img class="uk-border-rounded" src="images/avatar.jpg" width="200" height="200" alt="Border rounded">
+<img class="uk-border-circle" src="images/avatar.jpg" width="200" height="200" alt="Border circle">
+<img class="uk-border-pill" src="images/avatar.jpg" width="200" height="200" alt="Border pill">
+
+
+
+
 Logo
 With the new .uk-logo class you can easily define your logo, for example within your navbar.
 
@@ -426,11 +442,19 @@ With the new .uk-logo class you can easily define your logo, for example within 
 PREVIEW
 MARKUP
 Logo
+
+<a class="uk-logo" href="#">Logo</a>
+
 Add the .uk-light class from the Inverse component when displaying the image on dark backgrounds, so that its color will automatically be inverted for better visibility.
 
 PREVIEW
 MARKUP
 Logo
+
+<div class="uk-panel uk-padding uk-background-secondary uk-light">
+    <a class="uk-logo" href="#">Logo</a>
+</div>
+
 Logo image
 You can also use an <img> element, for example an SVG, as a logo.
 
@@ -521,6 +545,134 @@ Color
  Blend Luminosity
 Luminosity
 
+
+
+
+<div class="uk-child-width-1-2 uk-child-width-1-3@s uk-grid-small uk-light" uk-grid>
+    <div>
+        <div class="uk-inline uk-background-primary">
+            <img class="uk-blend-multiply" src="images/dark.jpg" alt="Blend Multiply">
+            <div class="uk-position-center">
+                <p class="uk-h4 uk-margin-remove">Multiply</p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="uk-inline uk-background-primary">
+            <img class="uk-blend-screen" src="images/dark.jpg" alt="Blend Screen">
+            <div class="uk-position-center">
+                <p class="uk-h4 uk-margin-remove">Screen</p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="uk-inline uk-background-primary">
+            <img class="uk-blend-overlay" src="images/dark.jpg" alt="Blend Overlay">
+            <div class="uk-position-center">
+                <p class="uk-h4 uk-margin-remove">Overlay</p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="uk-inline uk-background-primary">
+            <img class="uk-blend-darken" src="images/dark.jpg" alt="Blend Darken">
+            <div class="uk-position-center">
+                <p class="uk-h4 uk-margin-remove">Darken</p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="uk-inline uk-background-primary">
+            <img class="uk-blend-lighten" src="images/dark.jpg" alt="Blend Lighten">
+            <div class="uk-position-center">
+                <p class="uk-h4 uk-margin-remove">Lighten</p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="uk-inline uk-background-primary">
+            <img class="uk-blend-color-dodge" src="images/dark.jpg" alt="Blend Color Dodge">
+            <div class="uk-position-center">
+                <p class="uk-h4 uk-margin-remove">Color Dodge</p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="uk-inline uk-background-primary">
+            <img class="uk-blend-color-burn" src="images/dark.jpg" alt="Blend Color Burn">
+            <div class="uk-position-center">
+                <p class="uk-h4 uk-margin-remove">Color Burn</p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="uk-inline uk-background-primary">
+            <img class="uk-blend-hard-light" src="images/dark.jpg" alt="Blend Hard Light">
+            <div class="uk-position-center">
+                <p class="uk-h4 uk-margin-remove">Hard Light</p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="uk-inline uk-background-primary">
+            <img class="uk-blend-soft-light" src="images/dark.jpg" alt="Blend Soft Light">
+            <div class="uk-position-center">
+                <p class="uk-h4 uk-margin-remove">Soft Light</p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="uk-inline uk-background-primary">
+            <img class="uk-blend-difference" src="images/dark.jpg" alt="Blend Difference">
+            <div class="uk-position-center">
+                <p class="uk-h4 uk-margin-remove">Difference</p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="uk-inline uk-background-primary">
+            <img class="uk-blend-exclusion" src="images/dark.jpg" alt="Blend Exclusion">
+            <div class="uk-position-center">
+                <p class="uk-h4 uk-margin-remove">Exclusion</p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="uk-inline uk-background-primary">
+            <img class="uk-blend-hue" src="images/dark.jpg" alt="Blend Hue">
+            <div class="uk-position-center">
+                <p class="uk-h4 uk-margin-remove">Hue</p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="uk-inline uk-background-primary">
+            <img class="uk-blend-saturation" src="images/dark.jpg" alt="Blend Saturation">
+            <div class="uk-position-center">
+                <p class="uk-h4 uk-margin-remove">Saturation</p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="uk-inline uk-background-primary">
+            <img class="uk-blend-color" src="images/dark.jpg" alt="Blend Color">
+            <div class="uk-position-center">
+                <p class="uk-h4 uk-margin-remove">Color</p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="uk-inline uk-background-primary">
+            <img class="uk-blend-luminosity" src="images/dark.jpg" alt="Blend Luminosity">
+            <div class="uk-position-center">
+                <p class="uk-h4 uk-margin-remove">Luminosity</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
 Transform center
 To center an element to itself, add the uk-transform-center class. This is particularly useful for absolute positioning.
 
@@ -547,6 +699,28 @@ Bottom Right
 Top Center
 
 Bottom Center
+
+
+
+<div class="uk-child-width-1-3@m" uk-grid>
+    <div class="uk-animation-toggle">
+        <div class="uk-transform-origin-bottom-right uk-card uk-card-default uk-card-body uk-animation-scale-up">
+            <p class="uk-text-center">Bottom Right</p>
+        </div>
+    </div>
+    <div class="uk-animation-toggle">
+        <div class="uk-transform-origin-top-center uk-card uk-card-default uk-card-body uk-animation-scale-up">
+            <p class="uk-text-center">Top Center</p>
+        </div>
+    </div>
+    <div class="uk-animation-toggle">
+        <div class="uk-transform-origin-bottom-center uk-card uk-card-default uk-card-body uk-animation-scale-up">
+            <p class="uk-text-center">Bottom Center</p>
+        </div>
+    </div>
+</div>
+
+
 
 Disabled
 To disable the click behavior of any element, like a <a>, <button> or <iframe> element, add the .uk-disabled class.
