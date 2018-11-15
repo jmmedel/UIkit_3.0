@@ -56,6 +56,12 @@ If you want the tooltip to appear with a little delay, just add the delay option
 PREVIEW
 MARKUP
 HOVER
+
+<button class="uk-button uk-button-default" uk-tooltip="title: Hello World; delay: 500">Hover</button>
+
+
+
+
 Component options
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. Learn more
 
