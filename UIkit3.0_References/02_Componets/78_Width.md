@@ -31,6 +31,39 @@ MARKUP
 1-2
 1-4
 3-4
+
+
+<div class="uk-text-center" uk-grid>
+    <div class="uk-width-1-3">
+        <div class="uk-card uk-card-default uk-card-body">1-3</div>
+    </div>
+    <div class="uk-width-1-3">
+        <div class="uk-card uk-card-default uk-card-body">1-3</div>
+    </div>
+    <div class="uk-width-1-3">
+        <div class="uk-card uk-card-default uk-card-body">1-3</div>
+    </div>
+</div>
+
+<div class="uk-text-center" uk-grid>
+    <div class="uk-width-1-2">
+        <div class="uk-card uk-card-default uk-card-body">1-2</div>
+    </div>
+    <div class="uk-width-1-2">
+        <div class="uk-card uk-card-default uk-card-body">1-2</div>
+    </div>
+</div>
+
+<div class="uk-text-center" uk-grid>
+    <div class="uk-width-1-4">
+        <div class="uk-card uk-card-default uk-card-body">1-4</div>
+    </div>
+    <div class="uk-width-3-4">
+        <div class="uk-card uk-card-default uk-card-body">3-4</div>
+    </div>
+</div>
+
+
 Auto & expand
 The Width component provides additional modifiers to give you more flexibility in the distribution of items.
 
@@ -45,6 +78,19 @@ PREVIEW
 MARKUP
 Auto
 Expand
+
+
+<div class="uk-text-center" uk-grid>
+    <div class="uk-width-auto">
+        <div class="uk-card uk-card-default uk-card-body">Auto</div>
+    </div>
+    <div class="uk-width-expand">
+        <div class="uk-card uk-card-default uk-card-body">Expand</div>
+    </div>
+</div>
+
+
+
 Equal child widths
 To create a grid whose child elements' widths are evenly split, you don't have to apply the same class to each list item within the grid. Just add one of the .uk-child-width-* classes to the grid itself.
 
@@ -68,6 +114,28 @@ Item
 Item
 Item
 Item
+
+
+<div class="uk-child-width-1-4 uk-grid-small uk-text-center" uk-grid>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body">Item</div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body">Item</div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body">Item</div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body">Item</div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body">Item</div>
+    </div>
+</div>
+
+
+
 Items that use width classes with fractions will break into a new row, if they no longer fit their container's width. When using one of the expand classes, however, the space will be evenly distributed among items that always stay in the same row.
 
 <div class="uk-child-width-expand" uk-grid>
@@ -82,6 +150,28 @@ Item
 Item
 Item
 Item
+
+
+<div class="uk-child-width-expand uk-grid-small uk-text-center" uk-grid>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body">Item</div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body">Item</div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body">Item</div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body">Item</div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body">Item</div>
+    </div>
+</div>
+
+
+
 Fixed width
 In addition to the calculated width classes, you can also add one of the following classes, which apply fixed widths.
 
@@ -99,6 +189,16 @@ Medium
 Large
 X Large
 XX Large
+
+
+<div class="uk-width-small uk-margin"><div class="uk-card uk-card-small uk-card-default uk-card-body">Small</div></div>
+<div class="uk-width-medium uk-margin"><div class="uk-card uk-card-small uk-card-default uk-card-body">Medium</div></div>
+<div class="uk-width-large uk-margin"><div class="uk-card uk-card-small uk-card-default uk-card-body">Large</div></div>
+<div class="uk-width-xlarge uk-margin"><div class="uk-card uk-card-small uk-card-default uk-card-body">X Large</div></div>
+<div class="uk-width-xxlarge uk-margin"><div class="uk-card uk-card-small uk-card-default uk-card-body">XX Large</div></div>
+
+
+
 Mixing widths
 You can also combine .uk-child-width-* classes with .uk-width-* classes for individual items. That way it is possible, for example, to create a grid with one item that has a specific width and all other items expanding to fill the remaining space.
 
@@ -114,6 +214,10 @@ Expand
 1-3
 Expand
 Expand
+
+
+
+
 Responsive width
 UIkit provides a number of responsive widths classes. Basically they work just like the usual width classes, except that they have suffixes that represent the breakpoint from which they come to effect. These classes can be combined with the Visibility component. This is great to adjust your layout and content for different device sizes.
 
@@ -141,3 +245,38 @@ auto@m
 visible@l
 1-3@m
 expand@m
+
+
+<div class="uk-grid-match uk-grid-small uk-text-center" uk-grid>
+    <div class="uk-width-1-2@m">
+        <div class="uk-card uk-card-default uk-card-body">1-2@m</div>
+    </div>
+    <div class="uk-width-1-4@m">
+        <div class="uk-card uk-card-default uk-card-body">1-4@m</div>
+    </div>
+    <div class="uk-width-1-4@m">
+        <div class="uk-card uk-card-default uk-card-body">1-4@m</div>
+    </div>
+    <div class="uk-width-1-5@m uk-hidden@l">
+        <div class="uk-card uk-card-secondary uk-card-body">1-5@m<br>hidden@l</div>
+    </div>
+    <div class="uk-width-1-5@m uk-width-1-3@l">
+        <div class="uk-card uk-card-default uk-card-body">1-5@m<br>1-3@l</div>
+    </div>
+    <div class="uk-width-3-5@m uk-width-2-3@l">
+        <div class="uk-card uk-card-default uk-card-body">3-5@m<br>2-3@l</div>
+    </div>
+</div>
+
+<div class="uk-grid-match uk-grid-small uk-text-center" uk-grid>
+    <div class="uk-width-auto@m uk-visible@l">
+        <div class="uk-card uk-card-primary uk-card-body">auto@m<br>visible@l</div>
+    </div>
+    <div class="uk-width-1-3@m">
+        <div class="uk-card uk-card-default uk-card-body">1-3@m</div>
+    </div>
+    <div class="uk-width-expand@m">
+        <div class="uk-card uk-card-default uk-card-body">expand@m</div>
+    </div>
+</div>
+
