@@ -12,6 +12,10 @@ If title is the only option in the attribute value, you can also use uk-tooltip=
 PREVIEW
 MARKUP
 HOVER
+
+<button class="uk-button uk-button-default" uk-tooltip="Hello World">Hover</button>
+
+
 Alignment
 Add one of the following options to the uk-tooltip attribute to adjust the tooltip's alignment.
 
@@ -28,6 +32,22 @@ pos: right	Aligns the tooltip to the right.
 PREVIEW
 MARKUP
 TOP  TOP LEFT  TOP RIGHT BOTTOM  BOTTOM LEFT BOTTOM RIGHT  LEFT  RIGHT
+
+
+
+<p uk-margin>
+    <button class="uk-button uk-button-default" uk-tooltip="Hello World">Top</button>
+    <button class="uk-button uk-button-default" uk-tooltip="title: Hello World; pos: top-left">Top Left</button>
+    <button class="uk-button uk-button-default" uk-tooltip="title: Hello World; pos: top-right">Top Right</button>
+    <button class="uk-button uk-button-default" uk-tooltip="title: Hello World; pos: bottom">Bottom</button>
+    <button class="uk-button uk-button-default" uk-tooltip="title: Hello World; pos: bottom-left">Bottom Left</button>
+    <button class="uk-button uk-button-default" uk-tooltip="title: Hello World; pos: bottom-right">Bottom Right</button>
+    <button class="uk-button uk-button-default" uk-tooltip="title: Hello World; pos: left">Left</button>
+    <button class="uk-button uk-button-default" uk-tooltip="title: Hello World; pos: right">Right</button>
+</p>
+
+
+
 
 Delay
 If you want the tooltip to appear with a little delay, just add the delay option to the uk-tooltip attribute with your value in milliseconds.
