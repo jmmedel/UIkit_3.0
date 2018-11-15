@@ -156,6 +156,28 @@ MARKUP
 ACTIVE
 ITEM
 MORE 
+
+
+<ul uk-tab>
+    <li class="uk-active"><a href="#">Active</a></li>
+    <li><a href="#">Item</a></li>
+    <li>
+        <a href="#">More <span class="uk-margin-small-left" uk-icon="icon: triangle-down"></span></a>
+        <div uk-dropdown="mode: click">
+            <ul class="uk-nav uk-dropdown-nav">
+                <li class="uk-active"><a href="#">Active</a></li>
+                <li><a href="#">Item</a></li>
+                <li class="uk-nav-header">Header</li>
+                <li><a href="#">Item</a></li>
+                <li><a href="#">Item</a></li>
+                <li class="uk-nav-divider"></li>
+                <li><a href="#">Item</a></li>
+            </ul>
+        </div>
+    </li>
+</ul>
+
+
 Component options
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. Learn more
 
