@@ -28,6 +28,12 @@ You can also toggle multiple items at the same time. Just add the target: SELECT
 <button type="button" uk-toggle="target: .my-class"></button>
 <p class="my-class"></p>
 <p class="my-class"></p>
+
+<button class="uk-button uk-button-default" type="button" uk-toggle="target: .toggle">Toggle</button>
+<p class="toggle">Hello!</p>
+<p class="toggle" hidden>Bazinga!</p>
+
+
 PREVIEW
 MARKUP
 TOGGLE
@@ -44,6 +50,12 @@ PREVIEW
 MARKUP
 TOGGLE
 Custom class
+
+
+<button class="uk-button uk-button-default" type="button" uk-toggle="target: #toggle-custom; cls: uk-card-primary">Toggle</button>
+<div id="toggle-custom" class="uk-card uk-card-default uk-card-body uk-margin-small">Custom class</div>
+
+
 Animations
 The Toggle component allows you to add animations to items when toggling between them. Just add one of the .uk-animation-* classes from the Animation component to the animation parameter. The class will be applied to the in as well as the out animation. If you prefer a different out animation, just add another class.
 
@@ -53,6 +65,12 @@ PREVIEW
 MARKUP
 TOGGLE
 Animation
+
+<button href="#toggle-animation" class="uk-button uk-button-default" type="button" uk-toggle="target: #toggle-animation; animation: uk-animation-fade">Toggle</button>
+<div id="toggle-animation" class="uk-card uk-card-default uk-card-body uk-margin-small">Animation</div>
+
+
+
 Multiple animations
 You can also apply multiple animations from the Animation component. That way you can add different in and out animations.
 
@@ -62,6 +80,12 @@ PREVIEW
 MARKUP
 TOGGLE
 Animation
+
+
+<button class="uk-button uk-button-default" type="button" uk-toggle="target: #toggle-animation-multiple; animation:  uk-animation-slide-left, uk-animation-slide-bottom">Toggle</button>
+<div id="toggle-animation-multiple" class="uk-card uk-card-default uk-card-body uk-margin-small">Animation</div>
+
+
 Queued animations
 When toggling multiple items with an animation, you might want to wait until the first animation has run through before animating the second item in. To do so, just add the queued: true option to the uk-toggle attribute.
 
@@ -72,6 +96,12 @@ PREVIEW
 MARKUP
 TOGGLE
 Animation
+
+
+<button class="uk-button uk-button-default" type="button" uk-toggle="target: .toggle-animation-queued; animation: uk-animation-fade; queued: true; duration: 300">Toggle</button>
+<p class="toggle-animation-queued uk-card uk-card-default uk-card-body uk-margin-small">Animation</p>
+<p class="toggle-animation-queued uk-card uk-card-primary uk-card-body uk-margin-small" hidden>Animation</p>
+
 
 Modes
 A toggle can be triggered in different ways. Just add the mode option to the uk-toggle attribute and apply one of these values.
@@ -88,6 +118,12 @@ MARKUP
 HOVER
 What's up?
 
+
+<button class="uk-button uk-button-default" type="button" uk-toggle="target: #toggle-hover; mode: hover">hover</button>
+<p id="toggle-hover">What's up?</p>
+
+
+
 Media
 When using the media mode, you also need to add the media option and apply a valid value like a viewport value from @s to @xl. Without the target option, the toggle applies the toggled state to itself. So it will switch between the different states that are defined in the cls option depending on the viewport width that it is displayed on.
 
@@ -97,6 +133,14 @@ When using the media mode, you also need to add the media option and apply a val
 PREVIEW
 MARKUP
 Primary on large screens
+
+
+<div class="uk-card uk-card-default uk-card-body uk-width-medium" uk-toggle="cls: uk-card-primary; mode: media; media: @l">
+    Primary on large screens
+</div>
+
+
+
 NOTE The initial toggle state depends on the cls option. It is either the first given class in the space separated list or if set to false, the hidden attribute. If more than one class is given, the other classes are simply being toggled on state change.
 
 Component options
